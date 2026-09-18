@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Complete SEO Mastery Roadmap</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0A1424;--panel:#0F1D31;--panel-2:#14253D;--line:#22395A;--line-2:#2F4C73;
+  --text:#EAF1FA;--muted:#93A7C2;--dim:#62789A;--teal:#34D1BF;--blue:#5AA2FF;--amber:#F2B84B;
+  --display:"Archivo","Arial Narrow",Arial,sans-serif;
+  --body:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color-scheme:dark;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0A1424;--panel:#0F1D31;--text:#EAF1FA}}
+:root[data-theme="dark"]{--bg:#0A1424;--panel:#0F1D31;--text:#EAF1FA}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.sheet{max-width:1120px;margin:0 auto;padding:64px 28px 80px}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:6px}
+
+/* ---------- Header ---------- */
+.hero{padding-bottom:8px}
+h1{font-family:var(--display);font-stretch:122%;font-weight:800;font-size:clamp(34px,6.6vw,80px);line-height:.94;letter-spacing:-.012em;margin:0;max-width:14ch}
+.sub{margin:18px 0 0;color:var(--muted);font-size:clamp(16px,2vw,21px);max-width:60ch}
+.journey{display:flex;align-items:center;gap:14px;margin-top:34px}
+.journey .end{padding:10px 16px;border-radius:999px;border:1px solid var(--line-2);background:var(--panel);font-weight:700;font-size:14px;white-space:nowrap}
+.journey .end.to{border-color:var(--teal);color:var(--teal)}
+.journey .rule{flex:1;height:2px;background:linear-gradient(90deg,var(--line-2),var(--teal));position:relative;min-width:40px}
+.journey .rule::after{content:"";position:absolute;right:-2px;top:-5px;border-left:9px solid var(--teal);border-top:6px solid transparent;border-bottom:6px solid transparent}
+
+.track{list-style:none;padding:0;margin:40px 0 0;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(6,auto);grid-auto-flow:column;column-gap:28px}
+.track li{position:relative;padding-bottom:20px}
+.track li::after{content:"";position:absolute;left:27px;bottom:4px;height:12px;border-left:2px solid var(--line-2)}
+.track li::before{content:"";position:absolute;left:23px;bottom:0;border-top:6px solid var(--line-2);border-left:5px solid transparent;border-right:5px solid transparent}
+.track li:nth-child(6)::after,.track li:nth-child(6)::before,.track li:last-child::after,.track li:last-child::before{display:none}
+.track a{display:flex;gap:14px;align-items:center;padding:11px 16px;border:1px solid var(--line);border-radius:10px;background:var(--panel);text-decoration:none;font-weight:600;font-size:14px;letter-spacing:.01em;transition:border-color .15s}
+.track a:hover{border-color:var(--teal)}
+.track a b{font-family:var(--display);font-stretch:110%;color:var(--teal);min-width:22px;font-size:13px}
+.track li:last-child a{border-color:var(--teal)}
+
+/* ---------- Route & stations ---------- */
+.route{position:relative;margin-top:80px}
+.route::before{content:"";position:absolute;left:31px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--line-2),var(--teal) 50%,var(--line-2))}
+.station{position:relative;display:grid;grid-template-columns:64px 1fr;gap:26px;margin-bottom:56px;scroll-margin-top:24px}
+.num{width:64px;height:64px;border-radius:50%;background:var(--bg);border:2px solid var(--line-2);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-stretch:112%;font-size:22px;position:sticky;top:18px;z-index:1}
+.major .num{border-color:var(--teal);color:var(--teal);box-shadow:0 0 0 6px rgba(52,209,191,.12)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:28px;min-width:0}
+.major .card{border-color:rgba(52,209,191,.5);background:linear-gradient(180deg,rgba(52,209,191,.07),rgba(52,209,191,0) 260px),var(--panel)}
+.head{display:flex;gap:16px;align-items:flex-start;margin-bottom:22px}
+.ico{width:46px;height:46px;border-radius:12px;background:var(--panel-2);border:1px solid var(--line);display:grid;place-items:center;color:var(--teal);flex:none}
+.ico svg{width:24px;height:24px}
+h2{font-family:var(--display);font-stretch:114%;font-weight:760;font-size:clamp(20px,2.7vw,29px);letter-spacing:.01em;margin:2px 0 4px;line-height:1.08}
+.goal{margin:0;color:var(--muted);font-size:14.5px}
+.flag{margin-left:auto;font-size:12px;font-weight:700;color:var(--teal);border:1px solid rgba(52,209,191,.5);padding:5px 11px;border-radius:999px;white-space:nowrap;align-self:center}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.chips li{font-size:13px;padding:6px 11px;border-radius:8px;background:var(--panel-2);border:1px solid var(--line);line-height:1.25}
+.groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.groups.g5{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+.grp{border:1px solid var(--line);border-radius:12px;padding:16px;background:rgba(10,20,36,.5)}
+.grp h3{margin:0 0 12px;font-family:var(--display);font-stretch:110%;font-size:14.5px;font-weight:700;color:var(--teal);letter-spacing:.015em}
+.grp .chips li{background:var(--panel)}
+
+.diagram{margin-top:22px;border:1px dashed var(--line-2);border-radius:12px;padding:20px;background:rgba(10,20,36,.55)}
+.cap{margin:0 0 14px;font-size:12.5px;color:var(--dim);font-weight:600}
+.split{display:grid;grid-template-columns:1.15fr .85fr;gap:16px;align-items:start}
+
+/* SVG diagram styles */
+svg.dg{width:100%;height:auto;display:block}
+.d-box{fill:var(--panel-2);stroke:var(--line-2);stroke-width:1.2}
+.d-hl{stroke:var(--teal);stroke-width:1.6}
+.d-ln{stroke:var(--line-2);stroke-width:1.4;fill:none}
+.d-ac{stroke:var(--teal);stroke-width:1.6;fill:none}
+.d-dash{stroke-dasharray:4 4}
+.d-t{fill:var(--text);font:600 12px var(--body)}
+.d-m{fill:var(--muted);font:500 11px var(--body)}
+.d-tl{fill:var(--teal)}
+.d-bar{fill:var(--line-2)}
+.d-bar.t{fill:var(--teal)}
+.d-warn{fill:none;stroke:var(--amber);stroke-width:1.3;stroke-dasharray:4 3}
+.d-wt{fill:var(--amber);font:600 11px var(--body)}
+
+/* Flow chain */
+.flow{display:flex;flex-wrap:wrap;align-items:center;row-gap:10px}
+.fn{padding:9px 14px;border-radius:10px;border:1px solid var(--line-2);background:var(--panel-2);font-weight:600;font-size:13.5px}
+.fn.end{border-color:var(--teal);color:var(--teal)}
+.fa{width:34px;height:12px;position:relative;flex:none}
+.fa::before{content:"";position:absolute;left:6px;right:9px;top:5px;height:2px;background:var(--line-2)}
+.fa::after{content:"";position:absolute;right:4px;top:1px;border-left:7px solid var(--teal);border-top:5px solid transparent;border-bottom:5px solid transparent}
+.flow.ai .fn{border:1px solid transparent;background:linear-gradient(var(--panel-2),var(--panel-2)) padding-box,linear-gradient(120deg,var(--blue),var(--teal)) border-box}
+.flow.ai .fn:first-child{background:var(--panel-2);border-color:var(--line-2)}
+
+/* Diagnostics list */
+.diag{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.diag li{display:grid;grid-template-columns:14px 118px 1fr;gap:10px;align-items:center;padding:11px 14px;border-bottom:1px solid var(--line);font-size:13px}
+.diag li:last-child{border-bottom:0}
+.diag .dot{width:8px;height:8px;border-radius:50%;background:var(--teal)}
+.diag b{font-weight:700}
+.diag span:last-child{color:var(--muted)}
+
+/* Shopify tiers */
+.tiers{display:grid;grid-template-columns:1fr 34px 1fr 34px 1fr;align-items:stretch}
+.tier{border:1px solid var(--line-2);border-radius:12px;padding:16px;background:var(--panel-2)}
+.tier h4{margin:0;font-family:var(--display);font-stretch:112%;font-size:18px;font-weight:750}
+.tier .path{display:block;color:var(--muted);font-size:12.5px;margin:2px 0 12px}
+.tier .chips li{font-size:12px;padding:4px 9px;background:transparent;border-color:rgba(52,209,191,.45);color:var(--text)}
+.tarrow{display:grid;place-items:center}
+.tarrow i{display:block;width:22px;height:12px;position:relative}
+.tarrow i::before{content:"";position:absolute;left:0;right:7px;top:5px;height:2px;background:var(--teal)}
+.tarrow i::after{content:"";position:absolute;right:0;top:1px;border-left:8px solid var(--teal);border-top:5px solid transparent;border-bottom:5px solid transparent}
+.lane{margin-top:12px;border:1px dashed var(--line-2);border-radius:12px;padding:12px 16px;display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;font-size:13px;color:var(--muted)}
+.lane b{color:var(--text)}
+
+/* KPI tiles */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.kpi{border:1px solid var(--line);border-radius:12px;padding:14px;background:var(--panel-2)}
+.kpi b{display:block;font-size:13.5px}
+.kpi small{display:block;color:var(--dim);font-size:11.5px;margin-top:2px}
+.kpi svg{margin-top:10px;width:100%;height:46px}
+
+/* Audit process */
+.audit{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px}
+.audit li{counter-increment:s;position:relative;padding:14px;border:1px solid var(--line);border-radius:10px;background:var(--panel-2);font-weight:650;font-size:13.5px;min-height:78px;line-height:1.3}
+.audit li::before{content:counter(s,decimal-leading-zero);display:block;font-family:var(--display);font-stretch:110%;color:var(--teal);font-size:12px;margin-bottom:6px;font-weight:700}
+.audit li::after{content:"";position:absolute;right:-11px;top:50%;margin-top:-5px;border-left:7px solid var(--teal);border-top:5px solid transparent;border-bottom:5px solid transparent;z-index:1}
+.audit li:last-child::after{display:none}
+.audit li:last-child{border-color:var(--teal);background:rgba(52,209,191,.1);color:var(--teal)}
+
+/* Ladder */
+.ladder-wrap{overflow-x:auto;padding-bottom:4px}
+.ladder{display:grid;grid-template-columns:repeat(9,minmax(64px,1fr));gap:8px;align-items:end;height:270px;min-width:620px}
+.rung{height:calc(14% + var(--i) * 10.5%);border:1px solid var(--line-2);border-radius:10px 10px 4px 4px;padding:10px 6px;text-align:center;background:linear-gradient(180deg,rgba(52,209,191,var(--a)),rgba(90,162,255,.04))}
+.rung small{display:block;font-family:var(--display);color:var(--teal);font-size:11px;font-weight:700}
+.rung b{display:block;font-size:12.5px;margin-top:2px}
+.rung:last-child{border-color:var(--teal)}
+
+/* Final stack */
+.finale{margin-top:24px;border:1px solid var(--line-2);border-radius:20px;padding:40px 28px;background:radial-gradient(ellipse at 50% 0%,rgba(52,209,191,.1),rgba(52,209,191,0) 60%),var(--panel)}
+.finale h2{text-align:center;font-size:clamp(24px,3.6vw,38px);margin-bottom:28px}
+.stack{display:grid;gap:6px;max-width:640px;margin:0 auto;list-style:none;padding:0}
+.stack li{display:grid;grid-template-columns:34px 1fr;align-items:center}
+.stack li span{color:var(--dim);font-family:var(--display);font-weight:700;font-size:18px;text-align:center}
+.stack li b{padding:10px 16px;border-radius:9px;border:1px solid var(--line-2);background:var(--panel-2);font-family:var(--display);font-stretch:112%;font-size:14px;font-weight:700;letter-spacing:.03em}
+.result{max-width:640px;margin:8px auto 0;display:grid;grid-template-columns:34px 1fr;align-items:center}
+.result span{color:var(--teal);font-family:var(--display);font-weight:800;font-size:24px;text-align:center}
+.result b{padding:20px 18px;border-radius:12px;border:2px solid var(--teal);background:rgba(52,209,191,.12);color:var(--teal);font-family:var(--display);font-stretch:122%;font-weight:800;font-size:clamp(18px,3vw,26px);text-align:center;letter-spacing:.02em}
+.footer{margin-top:40px;padding-top:32px;border-top:1px solid var(--line)}
+.footer .flow{justify-content:center}
+.footer .fn{font-family:var(--display);font-stretch:112%;font-weight:700;letter-spacing:.03em;font-size:13px}
+
+/* ---------- Responsive ---------- */
+@media (max-width:860px){
+  .split{grid-template-columns:1fr}
+  .kpis{grid-template-columns:1fr 1fr}
+  .tiers{grid-template-columns:1fr}
+  .tarrow{height:30px}
+  .tarrow i{transform:rotate(90deg)}
+}
+@media (max-width:700px){
+  .sheet{padding:40px 16px 56px}
+  .track{grid-template-columns:1fr;grid-template-rows:none;grid-auto-flow:row}
+  .track li:nth-child(6)::after,.track li:nth-child(6)::before{display:block}
+  .route::before{left:19px}
+  .station{grid-template-columns:40px 1fr;gap:14px}
+  .num{width:40px;height:40px;font-size:15px}
+  .card{padding:20px}
+  .head{flex-wrap:wrap}
+  .flag{margin-left:0}
+  .journey{flex-wrap:wrap}
+  .diag li{grid-template-columns:14px 1fr}
+  .diag span:last-child{grid-column:2}
+}
+
+/* ---------- Interactive topics ---------- */
+.route .chips li[role="button"],.audit li[role="button"]{cursor:pointer;transition:border-color .15s,background-color .15s}
+.route .chips li[role="button"]:hover,.audit li[role="button"]:hover{border-color:var(--teal);background-color:#17304A}
+.route .chips li.done{border-color:rgba(52,209,191,.65)}
+.route .chips li.done::before{content:"✓ ";color:var(--teal);font-weight:700}
+.audit li.done{border-color:var(--teal)}
+.hint{margin-top:26px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;color:var(--muted);font-size:14px}
+.prog{flex:1;min-width:160px;height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.prog i{display:block;height:100%;width:0;background:var(--teal);transition:width .3s}
+#prog-t{color:var(--text);font-weight:600;font-size:13px}
+
+dialog.topic{width:min(980px,94vw);max-height:92vh;padding:0;border:1px solid var(--line-2);border-radius:18px;background:var(--panel);color:var(--text);box-shadow:0 30px 80px rgba(0,0,0,.55);overflow:hidden}
+dialog.topic[open]{display:flex;flex-direction:column}
+dialog.topic::backdrop{background:rgba(4,10,20,.8);backdrop-filter:blur(3px)}
+.m-top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 18px;border-bottom:1px solid var(--line);background:var(--panel-2);flex:none}
+.m-crumb{font-size:13px;color:var(--muted);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.m-crumb b{color:var(--teal)}
+.m-actions{display:flex;gap:6px;align-items:center;flex:none}
+.m-btn{background:transparent;border:1px solid var(--line-2);color:var(--text);border-radius:8px;height:34px;min-width:34px;padding:0 12px;cursor:pointer;font:600 13px var(--body);display:inline-flex;align-items:center;justify-content:center;gap:6px;text-decoration:none}
+.m-btn:hover{border-color:var(--teal)}
+.m-pos{font-size:12px;color:var(--dim);min-width:60px;text-align:center}
+.m-scroll{overflow-y:auto;padding:28px 32px 32px}
+#t-title{font-size:clamp(26px,4vw,40px);margin:0 0 12px}
+.m-lead{font-size:16.5px;line-height:1.6;max-width:72ch;color:#D6E2F2;margin:0 0 24px}
+.m-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+.m-panel{border:1px solid var(--line);border-radius:14px;padding:18px 20px;background:rgba(10,20,36,.5)}
+.m-panel h3,.m-prompt h3{font-family:var(--display);font-stretch:110%;font-size:15.5px;color:var(--teal);margin:0 0 10px}
+.m-keys{margin:0 0 20px;padding-left:18px}
+.m-keys li{margin-bottom:6px}
+.m-task{margin:0 0 16px;padding:12px 14px;border-left:3px solid var(--teal);background:var(--panel-2);border-radius:0 8px 8px 0}
+.m-btn[aria-pressed="true"]{background:rgba(52,209,191,.15);border-color:var(--teal);color:var(--teal)}
+.m-res{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.m-res a{display:block;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel-2);text-decoration:none}
+.m-res a:hover{border-color:var(--teal)}
+.m-res b{display:block;font-size:14px;font-weight:600}
+.m-res small{color:var(--dim);font-size:12px}
+.m-res li.srch a{border-style:dashed;background:transparent}
+.m-prompt{margin-top:18px;border:1px solid rgba(52,209,191,.45);border-radius:14px;padding:18px 20px;background:linear-gradient(180deg,rgba(52,209,191,.07),rgba(52,209,191,0) 140px)}
+.m-ph{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:12px}
+.m-ph h3{margin:0}
+.m-modes{display:flex;flex-wrap:wrap;gap:6px}
+.m-row{display:flex;gap:10px;align-items:center;margin-bottom:10px;font-size:13px;color:var(--muted)}
+.m-prompt select{background:var(--panel-2);color:var(--text);border:1px solid var(--line-2);border-radius:8px;padding:6px 8px;font:inherit}
+.m-prompt textarea{width:100%;background:var(--bg);color:var(--text);border:1px solid var(--line-2);border-radius:10px;padding:14px;font:13px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;resize:vertical}
+.m-pactions{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+.m-primary{background:var(--teal);color:#062321;border-color:var(--teal)}
+.m-primary:hover{filter:brightness(1.08)}
+.m-status{font-size:13px;color:var(--teal)}
+.m-prompt details{margin-top:14px;font-size:13px;color:var(--muted)}
+.m-prompt summary{cursor:pointer}
+.m-prompt details textarea{margin-top:8px;font-family:var(--body)}
+@media (max-width:760px){
+  dialog.topic{width:100vw;max-width:100vw;height:100dvh;max-height:100dvh;border-radius:0}
+  .m-grid{grid-template-columns:1fr}
+  .m-scroll{padding:20px}
+  .m-crumb{display:none}
+}
+
+/* ---------- Print ---------- */
+@media print{dialog.topic,.hint{display:none}}
+@media print{
+  body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .station,.grp,.finale{break-inside:avoid}
+  .num{position:static}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#34D1BF"/></marker>
+    <marker id="arrg" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2F4C73"/></marker>
+  </defs>
+  <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6"/><path d="M16 16l5 5"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M15 8l2 2"/></symbol>
+  <symbol id="i-compare" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="4" height="9" rx="1"/><rect x="10" y="7" width="4" height="13" rx="1"/><rect x="17" y="3" width="4" height="17" rx="1"/></symbol>
+  <symbol id="i-page" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9L7 7M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></symbol>
+  <symbol id="i-cluster" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="4.5" cy="5" r="2"/><circle cx="19.5" cy="5" r="2"/><circle cx="4.5" cy="19" r="2"/><circle cx="19.5" cy="19" r="2"/><path d="M6 6.5l3.8 3.5M18 6.5l-3.8 3.5M6 17.5l3.8-3.5M18 17.5l-3.8-3.5"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 13H6.2z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 11h10.3L20 7H6.3"/><circle cx="9" cy="19.5" r="1.5"/><circle cx="17" cy="19.5" r="1.5"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.6 0l3-3a4 4 0 0 0-5.6-5.6l-1 1"/><path d="M14 10a4 4 0 0 0-5.6 0l-3 3a4 4 0 0 0 5.6 5.6l1-1"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3l2 5.5L18.5 10.5 13 12.5 11 18l-2-5.5L3.5 10.5 9 8.5z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16h16"/><path d="M7 15l4-4 3 2 5-6"/></symbol>
+  <symbol id="i-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6h10M10 12h10M10 18h10M3.5 6l1.2 1.2L7 5M3.5 12l1.2 1.2L7 11M3.5 18l1.2 1.2L7 17"/></symbol>
+  <symbol id="i-brief" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></symbol>
+</svg>
+
+<main class="sheet">
+
+<header class="hero">
+  <h1>COMPLETE SEO MASTERY ROADMAP</h1>
+  <p class="sub">From Shopify Developer to Professional SEO Consultant: every skill to master, in the order to learn it, with extra depth on technical, Shopify, ecommerce, international and AI search.</p>
+  <div class="journey" aria-label="Shopify Developer to SEO Consultant">
+    <span class="end">Shopify Developer</span><span class="rule"></span><span class="end to">SEO Consultant</span>
+  </div>
+  <ol class="track" aria-label="Learning path">
+    <li><a href="#s01"><b>01</b>SEO FUNDAMENTALS</a></li>
+    <li><a href="#s02"><b>02</b>KEYWORD &amp; SEARCH INTENT</a></li>
+    <li><a href="#s03"><b>03</b>COMPETITOR RESEARCH</a></li>
+    <li><a href="#s04"><b>04</b>ON-PAGE SEO</a></li>
+    <li><a href="#s05"><b>05</b>TECHNICAL SEO</a></li>
+    <li><a href="#s06"><b>06</b>CONTENT SEO</a></li>
+    <li><a href="#s07"><b>07</b>SHOPIFY &amp; ECOMMERCE SEO</a></li>
+    <li><a href="#s09"><b>08</b>LINK BUILDING &amp; AUTHORITY</a></li>
+    <li><a href="#s10"><b>09</b>LOCAL + INTERNATIONAL SEO</a></li>
+    <li><a href="#s12"><b>10</b>AEO + GEO + AI SEARCH</a></li>
+    <li><a href="#s13"><b>11</b>ANALYTICS + REPORTING</a></li>
+    <li><a href="#s16"><b>12</b>SEO CONSULTING</a></li>
+  </ol>
+  <div class="hint"><span>Select any topic to open its details, learning resources and an AI study prompt.</span><div class="prog" aria-hidden="true"><i id="prog"></i></div><span id="prog-t">0 learned</span></div>
+</header>
+
+<div class="route">
+
+<!-- 01 -->
+<section class="station" id="s01">
+  <div><div class="num">01</div></div>
+  <div class="card">
+    <div class="head"><div class="ico"><svg><use href="#i-search"/></svg></div><div><h2>SEO FUNDAMENTALS</h2><p class="goal">How search engines discover, understand and rank pages.</p></div></div>
+    <ul class="chips">
+      <li>How Search Engines Work</li><li>Crawling</li><li>Rendering</li><li>Indexing</li><li>Ranking</li><li>Search Intent</li><li>SERPs</li><li>Ranking Signals</li><li>Google Search Essentials</li><li>White Hat SEO</li><li>Black Hat SEO</li><li>SEO Terminology</li>
+    </ul>
+    <div class="diagram">
+      <p class="cap">How a page reaches the results</p>
+      <div class="flow"><span class="fn">Search engine</span><i class="fa"></i><span class="fn">Crawler</span><i class="fa"></i><span class="fn">Index</span><i class="fa"></i><span class="fn">Ranking</span><i class="fa"></i><span class="fn end">Search results</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 -->
+<section class="station" id="s02">
+  <div><div class="num">02</div></div>
+  <div class="card">
+    <div class="head"><div class="ico"><svg><use href="#i-key"/></svg></div><div><h2>KEYWORD RESEARCH &amp; SEARCH INTENT</h2><p class="goal">Find the terms people search and what they expect to see.</p></div></div>
+    <div class="groups">
+      <div class="grp"><h3>Discovery</h3><ul class="chips"><li>Keyword Discovery</li><li>Seed Keywords</li><li>Long-tail Keywords</li><li>Short-tail Keywords</li></ul></div>
+      <div class="grp"><h3>Metrics</h3><ul class="chips"><li>Search Volume</li><li>Keyword Difficulty</li><li>CPC</li></ul></div>
+      <div class="grp"><h3>Search Intent</h3><ul class="chips"><li>Informational</li><li>Commercial</li><li>Transactional</li><li>Navigational</li></ul></div>
+      <div class="grp"><h3>Planning</h3><ul class="chips"><li>Keyword Mapping</li><li>Keyword Clustering</li><li>SERP Analysis</li><li>Entity Research</li></ul></div>
+    </div>
+    <div class="diagram">
+      <p class="cap">From query to the page that should rank</p>
+      <div class="flow"><span class="fn">Keyword</span><i class="fa"></i><span class="fn">Intent</span><i class="fa"></i><span class="fn">SERP</span><i class="fa"></i><span class="fn end">Target page</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 -->
+<section class="station" id="s03">
+  <div><div class="num">03</div></div>
+  <div class="card">
+    <div class="head"><div class="ico"><svg><use href="#i-compare"/></svg></div><div><h2>COMPETITOR &amp; SERP RESEARCH</h2><p class="goal">Learn who wins the SERP and why.</p></div></div>
+    <ul class="chips">
+      <li>Organic Competitors</li><li>SERP Competitors</li><li>Competitor Keywords</li><li>Keyword Gap</li><li>Content Gap</li><li>Backlink Gap</li><li>Top Pages</li><li>Traffic Sources</li><li>SERP Features</li><li>Content Structure</li><li>Internal Linking</li><li>Competitor Architecture</li>
+    </ul>
+    <div class="diagram">
+      <p class="cap">Compare side by side, then isolate the gaps</p>
+      <svg class="dg" viewBox="0 0 560 210" role="img" aria-label="Client versus Competitor A versus Competitor B, leading to keyword gap, content gap and backlink gap">
+        <rect class="d-box d-hl" x="10" y="10" width="140" height="80" rx="9"/>
+        <rect class="d-box" x="210" y="10" width="140" height="80" rx="9"/>
+        <rect class="d-box" x="410" y="10" width="140" height="80" rx="9"/>
+        <text class="d-t d-tl" x="80" y="33" text-anchor="middle">Client</text>
+        <text class="d-t" x="280" y="33" text-anchor="middle">Competitor A</text>
+        <text class="d-t" x="480" y="33" text-anchor="middle">Competitor B</text>
+        <rect class="d-bar t" x="30" y="46" width="60" height="6" rx="3"/><rect class="d-bar t" x="30" y="58" width="40" height="6" rx="3"/><rect class="d-bar t" x="30" y="70" width="50" height="6" rx="3"/>
+        <rect class="d-bar" x="230" y="46" width="95" height="6" rx="3"/><rect class="d-bar" x="230" y="58" width="80" height="6" rx="3"/><rect class="d-bar" x="230" y="70" width="70" height="6" rx="3"/>
+        <rect class="d-bar" x="430" y="46" width="80" height="6" rx="3"/><rect class="d-bar" x="430" y="58" width="100" height="6" rx="3"/><rect class="d-bar" x="430" y="70" width="60" height="6" rx="3"/>
+        <text class="d-m" x="180" y="54" text-anchor="middle">vs</text><text class="d-m" x="380" y="54" text-anchor="middle">vs</text>
+        <path class="d-ln" d="M80 90V118M280 90V118M480 90V118M80 118H480"/>
+        <path class="d-ac" d="M80 118V146M280 118V146M480 118V146" marker-end="url(#arr)"/>
+        <rect class="d-box d-hl" x="10" y="152" width="140" height="44" rx="22"/>
+        <rect class="d-box d-hl" x="210" y="152" width="140" height="44" rx="22"/>
+        <rect class="d-box d-hl" x="410" y="152" width="140" height="44" rx="22"/>
+        <text class="d-t" x="80" y="178" text-anchor="middle">Keyword Gap</text>
+        <text class="d-t" x="280" y="178" text-anchor="middle">Content Gap</text>
+        <text class="d-t" x="480" y="178" text-anchor="middle">Backlink Gap</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 04 -->
+<section class="station" id="s04">
+  <div><div class="num">04</div></div>
+  <div class="card">
+    <div class="head"><div class="ico"><svg><use href="#i-page"/></svg></div><div><h2>ON-PAGE SEO</h2><p class="goal">Make each page clearly relevant to its target query.</p></div></div>
+    <ul class="chips">
+      <li>Title Tags</li><li>Meta Descriptions</li><li>H1–H6</li><li>URL Optimization</li><li>Keyword Placement</li><li>Search Intent Alignment</li><li>Content Structure</li><li>Semantic SEO</li><li>Entities</li><li>Image ALT Text</li><li>Image Optimization</li><li>Internal Linking</li><li>Breadcrumbs</li><li>Anchor Text</li><li>Duplicate Content</li><li>Canonical Tags</li>
+    </ul>
+    <div class="diagram">
+      <p class="cap">Anatomy of an optimized page</p>
+      <svg class="dg" viewBox="0 0 540 260" role="img" aria-label="Webpage diagram labelling title tag, URL, H1, content, image with ALT text and internal link">
+        <rect class="d-box" x="10" y="10" width="310" height="240" rx="10"/>
+        <rect x="22" y="18" width="116" height="16" rx="4" fill="#1E3656"/><rect class="d-bar t" x="30" y="24" width="70" height="4" rx="2"/>
+        <rect x="22" y="40" width="286" height="16" rx="8" fill="#0A1424" stroke="#2F4C73"/><rect class="d-bar" x="34" y="46" width="130" height="4" rx="2"/>
+        <rect class="d-bar" x="30" y="66" width="90" height="3" rx="1.5"/>
+        <rect x="30" y="76" width="200" height="14" rx="3" fill="#EAF1FA" opacity=".85"/>
+        <rect class="d-bar" x="30" y="102" width="270" height="5" rx="2.5"/><rect class="d-bar" x="30" y="113" width="250" height="5" rx="2.5"/><rect class="d-bar" x="30" y="124" width="262" height="5" rx="2.5"/>
+        <rect x="30" y="142" width="112" height="78" rx="6" fill="#1E3656" stroke="#2F4C73"/>
+        <path d="M38 210l28-30 20 18 16-12 32 24z" fill="#2F4C73"/><circle cx="118" cy="162" r="7" fill="#2F4C73"/>
+        <rect class="d-bar" x="154" y="146" width="140" height="5" rx="2.5"/><rect class="d-bar" x="154" y="158" width="126" height="5" rx="2.5"/><rect class="d-bar" x="154" y="170" width="134" height="5" rx="2.5"/>
+        <rect class="d-bar t" x="154" y="184" width="64" height="5" rx="2.5"/><rect class="d-bar" x="222" y="184" width="60" height="5" rx="2.5"/>
+        <rect class="d-bar" x="154" y="196" width="120" height="5" rx="2.5"/>
+        <g class="d-ln"><path d="M138 26H352"/><path d="M308 48H352"/><path d="M120 67.5H352"/><path d="M230 83H352"/><path d="M300 115H352"/><path d="M142 212H352"/><path d="M218 186.5H352"/></g>
+        <g><circle cx="354" cy="26" r="3" fill="#34D1BF"/><circle cx="354" cy="48" r="3" fill="#34D1BF"/><circle cx="354" cy="67.5" r="3" fill="#34D1BF"/><circle cx="354" cy="83" r="3" fill="#34D1BF"/><circle cx="354" cy="115" r="3" fill="#34D1BF"/><circle cx="354" cy="186.5" r="3" fill="#34D1BF"/><circle cx="354" cy="212" r="3" fill="#34D1BF"/></g>
+        <text class="d-t" x="366" y="30">Title tag</text>
+        <text class="d-t" x="366" y="52">URL</text>
+        <text class="d-t" x="366" y="71.5">Breadcrumbs</text>
+        <text class="d-t" x="366" y="87">H1 heading</text>
+        <text class="d-t" x="366" y="119">Content (H2–H6, entities)</text>
+        <text class="d-t" x="366" y="190.5">Internal link + anchor text</text>
+        <text class="d-t" x="366" y="216">Image + ALT text</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 05 -->
+<section class="station major" id="s05">
+  <div><div class="num">05</div></div>
+  <div class="card">
+    <div class="head"><div class="ico"><svg><use href="#i-gear"/></svg></div><div><h2>TECHNICAL SEO</h2><p class="goal">Make the site easy to crawl, render, index and load fast.</p></div><span class="flag">Core focus</span></div>
+    <div class="groups g5">
+      <div class="grp"><h3>Crawlability</h3><ul class="chips"><li>robots.txt</li><li>XML Sitemap</li><li>Crawl Budget</li><li>Crawl Depth</li><li>Orphan Pages</li><li>Broken Links</li><li>Redirect Chains</li></ul></div>
+      <div class="grp"><h3>Indexability</h3><ul class="chips"><li>noindex</li><li>canonical</li><li>redirects</li><li>duplicate URLs</li><li>URL parameters</li><li>pagination</li><li>faceted navigation</li></ul></div>
+      <div class="grp"><h3>Site Architecture</h3><ul class="chips"><li>URL Structure</li><li>Site Hierarchy</li><li>Click Depth</li><li>Internal Links</li><li>Breadcrumbs</li><li>Information Architecture</li></ul></div>
+      <div class="grp"><h3>Performance</h3><ul class="chips"><li>Core Web Vitals</li><li>LCP</li><li>INP</li><li>CLS</li><li>TTFB</li><li>JavaScript</li><li>CSS</li><li>Image Optimization</li><li>Lazy Loading</li><li>Render Blocking</li></ul></div>
+      <div class="grp"><h3>Technical Quality</h3><ul class="chips"><li>HTTPS</li><li>Mobile SEO</li><li>JavaScript SEO</li><li>Structured Data</li><li>Schema Markup</li><li>International Tags</li><li>404 / 410</li><li>301 / 302</li></ul></div>
+    </div>
+    <div class="diagram">
+      <p class="cap">Architecture as the crawler sees it, and what to diagnose</p>
+      <div class="split">
+        <svg class="dg" viewBox="0 0 520 270" role="img" aria-label="Crawler moving through a site hierarchy from home to categories to pages, with an orphan page it cannot reach">
+          <rect class="d-box d-hl" x="18" y="22" width="46" height="36" rx="9"/>
+          <circle cx="33" cy="38" r="4" fill="#34D1BF"/><circle cx="49" cy="38" r="4" fill="#34D1BF"/><path d="M41 22v-8" class="d-ac"/><circle cx="41" cy="12" r="3" fill="#34D1BF"/>
+          <text class="d-m" x="41" y="74" text-anchor="middle">Crawler</text>
+          <rect class="d-box" x="8" y="100" width="70" height="24" rx="6"/><text class="d-m" x="43" y="116" text-anchor="middle">robots.txt</text>
+          <path class="d-ln d-dash" d="M41 78V98"/>
+          <path class="d-ac d-dash" d="M66 40H214" marker-end="url(#arr)"/>
+          <rect class="d-box d-hl" x="220" y="22" width="100" height="34" rx="8"/><text class="d-t" x="270" y="43" text-anchor="middle">Home</text>
+          <path class="d-ln" d="M270 56V78H140V100M270 78V100M270 78H400V100"/>
+          <rect class="d-box" x="90" y="100" width="100" height="30" rx="7"/><text class="d-t" x="140" y="119" text-anchor="middle">Category</text>
+          <rect class="d-box" x="220" y="100" width="100" height="30" rx="7"/><text class="d-t" x="270" y="119" text-anchor="middle">Category</text>
+          <rect class="d-box" x="350" y="100" width="100" height="30" rx="7"/><text class="d-t" x="400" y="119" text-anchor="middle">Category</text>
+          <path class="d-ln" d="M140 130V150H100V170M140 150H170V170M270 130V150H230V170M270 150H300V170M400 130V150H360V170M400 150H430V170"/>
+          <g><rect class="d-box" x="75" y="170" width="50" height="26" rx="6"/><rect class="d-box" x="145" y="170" width="50" height="26" rx="6"/><rect class="d-box" x="205" y="170" width="50" height="26" rx="6"/><rect class="d-box" x="275" y="170" width="50" height="26" rx="6"/><rect class="d-box" x="335" y="170" width="50" height="26" rx="6"/><rect class="d-box" x="405" y="170" width="50" height="26" rx="6"/></g>
+          <g class="d-m" text-anchor="middle"><text x="100" y="187">Page</text><text x="170" y="187">Page</text><text x="230" y="187">Page</text><text x="300" y="187">Page</text><text x="360" y="187">Page</text><text x="430" y="187">Page</text></g>
+          <g class="d-m" text-anchor="end"><text x="514" y="43">Depth 0</text><text x="514" y="119">Depth 1</text><text x="514" y="187">Depth 2</text></g>
+          <rect class="d-box" x="90" y="228" width="120" height="28" rx="7"/><text class="d-t" x="150" y="246" text-anchor="middle">XML sitemap</text>
+          <rect class="d-warn" x="330" y="228" width="120" height="28" rx="7"/><text class="d-wt" x="390" y="246" text-anchor="middle">Orphan page</text>
+          <text class="d-m" x="460" y="246">no links in</text>
+        </svg>
+        <ul class="diag" aria-label="Technical diagnostics">
+          <li><span class="dot"></span><b>Crawlability</b><span>robots rules, sitemap, broken links</span></li>
+          <li><span class="dot"></span><b>Indexability</b><span>canonicals, noindex, duplicates</span></li>
+          <li><span class="dot"></span><b>Rendering</b><span>JavaScript output vs raw HTML</span></li>
+          <li><span class="dot"></span><b>Core Web Vitals</b><span>LCP, INP, CLS by template</span></li>
+          <li><span class="dot"></span><b>Structured data</b><span>valid, eligible for rich results</span></li>
+          <li><span class="dot"></span><b>Status codes</b><span>301 / 302, 404 / 410, chains</span></li>
+          <li><span class="dot"></span><b>Security &amp; mobile</b><span>HTTPS, mobile parity</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 -->
+<section class="station" id="s06">
+  <div><div class="num">06</div></div>
+  <div class="card">
+    <div class="head"><div class="ico"><svg><use href="#i-cluster"/></svg></div><div><h2>CONTENT SEO &amp; TOPICAL AUTHORITY</h2><p class="goal">Build depth and trust across a whole topic.</p></div></div>
+    <ul class="chips">
+      <li>Content Strategy</li><li>Topic Research</li><li>Topic Clusters</li><li>Pillar Pages</li><li>Supporting Articles</li><li>Search Intent</li><li>Semantic Coverage</li><li>Topical Authority</li><li>Content Depth</li><li>Content Quality</li><li>Information Gain</li><li>E-E-A-T</li><li>Content Refresh</li><li>Content Pruning</li><li>Content Optimization</li><li>AI-Assisted Content</li><li>Editorial Strategy</li>
+    </ul>
+    <div class="diagram">
+      <p class="cap">A pillar page linked to its supporting cluster</p>
+      <svg class="dg" viewBox="0 0 520 300" role="img" aria-label="Topic cluster with a central pillar page connected to eight supporting articles">
+        <path class="d-ln d-dash" d="M460 150L401 228L260 260L119 228L60 150L119 72L260 40L401 72Z"/>
+        <g class="d-ac"><path d="M260 150L460 150M260 150L401 228M260 150L260 260M260 150L119 228M260 150L60 150M260 150L119 72M260 150L260 40M260 150L401 72"/></g>
+        <circle cx="260" cy="150" r="54" fill="#0F2A3A" stroke="#34D1BF" stroke-width="2"/>
+        <text class="d-t" x="260" y="146" text-anchor="middle" style="font-size:14px">Pillar</text>
+        <text class="d-m" x="260" y="163" text-anchor="middle">core topic</text>
+        <g>
+          <rect class="d-box" x="412" y="135" width="96" height="30" rx="15"/><rect class="d-box" x="353" y="213" width="96" height="30" rx="15"/><rect class="d-box" x="212" y="245" width="96" height="30" rx="15"/><rect class="d-box" x="71" y="213" width="96" height="30" rx="15"/><rect class="d-box" x="12" y="135" width="96" height="30" rx="15"/><rect class="d-box" x="71" y="57" width="96" height="30" rx="15"/><rect class="d-box" x="212" y="25" width="96" height="30" rx="15"/><rect class="d-box" x="353" y="57" width="96" height="30" rx="15"/>
+        </g>
+        <g class="d-t" text-anchor="middle" style="font-size:11.5px">
+          <text x="460" y="154">How-to guide</text><text x="401" y="232">Comparison</text><text x="260" y="264">FAQ</text><text x="119" y="232">Buying guide</text><text x="60" y="154">Glossary</text><text x="119" y="76">Case study</text><text x="260" y="44">Checklist</text><text x="401" y="76">Tutorial</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 07 -->
+<section class="station major" id="s07">
+  <div><div class="num">07</div></div>
+  <div class="card">
+    <div class="head"><div class="ico"><svg><use href="#i-bag"/></svg></div><div><h2>SHOPIFY SEO</h2><p class="goal">Apply every layer to the Shopify platform and its theme code.</p></div><span class="flag">Your edge</span></div>
+    <div class="groups g5">
+      <div class="grp"><h3>Shopify Architecture</h3><ul class="chips"><li>Homepage</li><li>Collections</li><li>Products</li><li>Pages</li><li>Blogs</li><li>Articles</li></ul></div>
+      <div class="grp"><h3>Technical Shopify SEO</h3><ul class="chips"><li>Shopify Canonicals</li><li>Sitemap</li><li>robots.txt</li><li>URL Structure</li><li>Redirects</li><li>Duplicate URLs</li><li>Variant URLs</li><li>Pagination</li><li>Collection Filters</li><li>Faceted Navigation</li><li>Internal Linking</li></ul></div>
+      <div class="grp"><h3>Product SEO</h3><ul class="chips"><li>Product Titles</li><li>Product Descriptions</li><li>Product Images</li><li>ALT Text</li><li>Product Schema</li><li>Reviews</li><li>FAQs</li><li>Related Products</li></ul></div>
+      <div class="grp"><h3>Collection SEO</h3><ul class="chips"><li>Collection Titles</li><li>Collection Descriptions</li><li>Category Architecture</li><li>Internal Links</li><li>Commercial Intent</li></ul></div>
+      <div class="grp"><h3>Theme SEO</h3><ul class="chips"><li>Liquid</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Theme Performance</li><li>Core Web Vitals</li><li>Structured Data</li></ul></div>
+    </div>
+    <div class="diagram">
+      <p class="cap">Storefront architecture with the optimization points at each layer</p>
+      <div class="tiers">
+        <div class="tier"><h4>Homepage</h4><span class="path">/</span>
+          <ul class="chips"><li>Brand title + meta</li><li>Links to top collections</li><li>Organization schema</li><li>LCP hero image</li></ul></div>
+        <div class="tarrow"><i></i></div>
+        <div class="tier"><h4>Collection</h4><span class="path">/collections/handle</span>
+          <ul class="chips"><li>Category keyword</li><li>Intro copy</li><li>Filter URLs controlled</li><li>Pagination</li><li>Breadcrumbs</li></ul></div>
+        <div class="tarrow"><i></i></div>
+        <div class="tier"><h4>Product</h4><span class="path">/products/handle</span>
+          <ul class="chips"><li>Canonical to product URL</li><li>Variant handling</li><li>Product schema</li><li>Reviews + FAQs</li><li>Related products</li></ul></div>
+      </div>
+      <div class="lane"><b>Content layer</b><span>Pages</span><span>Blogs</span><span>Articles</span><span>internal links into collections and products</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 -->
+<section class="station" id="s08">
+  <div><div class="num">08</div></div>
+  <div class="card">
+    <div class="head"><div class="ico"><svg><use href="#i-cart"/></svg></div><div><h2>ECOMMERCE SEO</h2><p class="goal">Rank products and categories, then turn visits into orders.</p></div></div>
+    <ul class="chips">
+      <li>Product Keyword Research</li><li>Category SEO</li><li>Product Schema</li><li>Merchant Intent</li><li>Product Reviews</li><li>Ratings</li><li>Buying Guides</li><li>Faceted Navigation</li><li>Product Variants</li><li>Out-of-stock Products</li><li>Internal Linking</li><li>Commercial Content</li><li>Conversion Optimization</li><li>Ecommerce Site Architecture</li>
+    </ul>
+    <div class="diagram">
+      <p class="cap">The organic customer journey</p>
+      <div class="flow"><span class="fn">Search</span><i class="fa"></i><span class="fn">Category</span><i class="fa"></i><span class="fn">Product</span><i class="fa"></i><span class="fn">Cart</span><i class="fa"></i><span class="fn end">Conversion</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 09 -->
+<section class="station" id="s09">
+  <div><div class="num">09</div></div>
+  <div class="card">
+    <div class="head"><div class="ico"><svg><use href="#i-link"/></svg></div><div><h2>OFF-PAGE SEO &amp; AUTHORITY</h2><p class="goal">Earn authority through links and mentions.</p></div></div>
+    <ul class="chips">
+      <li>Backlink Fundamentals</li><li>Referring Domains</li><li>Link Relevance</li><li>Anchor Text</li><li>Dofollow</li><li>Nofollow</li><li>Digital PR</li><li>Guest Posting</li><li>Resource Link Building</li><li>Broken Link Building</li><li>Linkable Assets</li><li>Brand Mentions</li><li>Outreach</li><li>Partnerships</li><li>Authority Building</li>
+    </ul>
+    <div class="diagram">
+      <p class="cap">Relevant, authoritative sites pointing to one domain</p>
+      <svg class="dg" viewBox="0 0 520 280" role="img" aria-label="Several authoritative websites linking toward one central website">
+        <g class="d-ac">
+          <path d="M94 60L217.6 112.2" marker-end="url(#arr)"/>
+          <path d="M79.6 166L214.9 139" marker-end="url(#arr)"/>
+          <path d="M182 216.6L229.2 164.2" marker-end="url(#arr)"/>
+          <path d="M344.4 214.4L292.5 162.5" marker-end="url(#arr)"/>
+          <path d="M432.6 164.5L305.1 139" marker-end="url(#arr)"/>
+          <path d="M431.4 62.3L302.8 113.1" marker-end="url(#arr)"/>
+          <path d="M260 52L260 84" marker-end="url(#arr)"/>
+        </g>
+        <g class="d-box"><circle cx="70" cy="50" r="26"/><circle cx="60" cy="170" r="20"/><circle cx="170" cy="230" r="18"/><circle cx="360" cy="230" r="22"/><circle cx="460" cy="170" r="28"/><circle cx="450" cy="55" r="20"/><circle cx="260" cy="28" r="22"/></g>
+        <g class="d-m" text-anchor="middle"><text x="70" y="92">Publication</text><text x="60" y="206">Industry blog</text><text x="170" y="264">Directory</text><text x="360" y="268">Partner</text><text x="460" y="214">News site</text><text x="450" y="91">Resource page</text></g>
+        <text class="d-m" x="290" y="32">Association</text>
+        <circle cx="260" cy="130" r="42" fill="#0F2A3A" stroke="#34D1BF" stroke-width="2"/>
+        <text class="d-t" x="260" y="134" text-anchor="middle" style="font-size:13px">Your site</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 10 -->
+<section class="station" id="s10">
+  <div><div class="num">10</div></div>
+  <div class="card">
+    <div class="head"><div class="ico"><svg><use href="#i-pin"/></svg></div><div><h2>LOCAL SEO</h2><p class="goal">Win the map pack and nearby searches.</p></div></div>
+    <ul class="chips">
+      <li>Google Business Profile</li><li>Local Keywords</li><li>Map Pack</li><li>Local Citations</li><li>NAP</li><li>Reviews</li><li>Local Landing Pages</li><li>Local Schema</li><li>Local Links</li><li>Service Areas</li><li>Reputation Management</li>
+    </ul>
+    <div class="diagram">
+      <p class="cap">From a location to a local result</p>
+      <div class="flow"><span class="fn">Map pin</span><i class="fa"></i><span class="fn">Business profile</span><i class="fa"></i><span class="fn end">Local search results</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 -->
+<section class="station major" id="s11">
+  <div><div class="num">11</div></div>
+  <div class="card">
+    <div class="head"><div class="ico"><svg><use href="#i-globe"/></svg></div><div><h2>INTERNATIONAL SEO</h2><p class="goal">Serve the right version to each country and language.</p></div></div>
+    <ul class="chips">
+      <li>Country Targeting</li><li>Language Targeting</li><li>hreflang</li><li>URL Structures</li><li>ccTLD</li><li>Subdomains</li><li>Subdirectories</li><li>Localization</li><li>Currency</li><li>Local Keywords</li><li>Duplicate International Content</li><li>Geo-targeting</li><li>International Site Architecture</li>
+    </ul>
+    <div class="diagram">
+      <p class="cap">One store, localized versions per market, tied together with hreflang</p>
+      <svg class="dg" viewBox="0 0 520 290" role="img" aria-label="Global store connected to localized versions for USA, Canada, UK, Europe and Australia">
+        <g class="d-ln"><path d="M260 140L80 70M260 140L80 210M260 140L440 70M260 140L440 210M260 140L260 236"/></g>
+        <circle cx="260" cy="140" r="48" fill="#0F2A3A" stroke="#34D1BF" stroke-width="2"/>
+        <ellipse cx="260" cy="140" rx="20" ry="48" fill="none" stroke="#34D1BF" stroke-opacity=".5"/>
+        <path d="M212 140H308M218 118H302M218 162H302" stroke="#34D1BF" stroke-opacity=".5" fill="none"/>
+        <text class="d-m" x="260" y="206" text-anchor="middle">Global store</text>
+        <text class="d-m d-tl" x="160" y="96" text-anchor="middle" transform="rotate(21 160 96)">hreflang</text>
+        <g class="d-box d-hl">
+          <rect x="15" y="48" width="130" height="44" rx="10"/><rect x="15" y="188" width="130" height="44" rx="10"/><rect x="375" y="48" width="130" height="44" rx="10"/><rect x="375" y="188" width="130" height="44" rx="10"/><rect x="195" y="236" width="130" height="44" rx="10"/>
+        </g>
+        <g class="d-t" text-anchor="middle"><text x="80" y="67">USA</text><text x="80" y="207">Canada</text><text x="440" y="67">UK</text><text x="440" y="207">Europe</text><text x="260" y="255">Australia</text></g>
+        <g class="d-m" text-anchor="middle"><text x="80" y="83">/en-us/  USD</text><text x="80" y="223">/en-ca/  CAD</text><text x="440" y="83">/en-gb/  GBP</text><text x="440" y="223">/de/  /fr/  EUR</text><text x="260" y="271">/en-au/  AUD</text></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 12 -->
+<section class="station major" id="s12">
+  <div><div class="num">12</div></div>
+  <div class="card">
+    <div class="head"><div class="ico"><svg><use href="#i-spark"/></svg></div><div><h2>AEO + GEO + AI SEARCH</h2><p class="goal">Get cited and recommended by answer engines and AI assistants.</p></div><span class="flag">Emerging</span></div>
+    <div class="groups">
+      <div class="grp"><h3>AEO: Answer Engine Optimization</h3><ul class="chips"><li>Answer Optimization</li><li>Featured Snippets</li><li>Question Queries</li><li>Direct Answers</li><li>FAQ Content</li><li>Conversational Search</li><li>Voice Search</li></ul></div>
+      <div class="grp"><h3>GEO: Generative Engine Optimization</h3><ul class="chips"><li>Generative Engine Optimization</li><li>AI Search Visibility</li><li>Entity Optimization</li><li>Brand Mentions</li><li>Citations</li><li>Knowledge Sources</li><li>Contextual Authority</li></ul></div>
+      <div class="grp"><h3>AI Search Platforms</h3><ul class="chips"><li>Google AI Overviews</li><li>ChatGPT</li><li>Gemini</li><li>Perplexity</li><li>Microsoft Copilot</li></ul></div>
+    </div>
+    <div class="diagram">
+      <p class="cap">Where visibility now has to be earned</p>
+      <div class="flow ai"><span class="fn">Traditional Google Search</span><i class="fa"></i><span class="fn">AI Overview</span><i class="fa"></i><span class="fn">ChatGPT</span><i class="fa"></i><span class="fn">Gemini</span><i class="fa"></i><span class="fn">Perplexity</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 13 -->
+<section class="station" id="s13">
+  <div><div class="num">13</div></div>
+  <div class="card">
+    <div class="head"><div class="ico"><svg><use href="#i-chart"/></svg></div><div><h2>SEO ANALYTICS &amp; MEASUREMENT</h2><p class="goal">Prove impact with traffic, rankings and revenue.</p></div></div>
+    <ul class="chips">
+      <li>Google Search Console</li><li>Google Analytics 4</li><li>Organic Traffic</li><li>Clicks</li><li>Impressions</li><li>CTR</li><li>Average Position</li><li>Conversions</li><li>Revenue</li><li>Landing Pages</li><li>Query Performance</li><li>User Behavior</li><li>Attribution</li><li>SEO KPIs</li>
+    </ul>
+    <div class="diagram">
+      <p class="cap">The four views every report comes back to (illustrative trends)</p>
+      <div class="kpis">
+        <div class="kpi"><b>Traffic</b><small>GA4 + Search Console</small><svg viewBox="0 0 120 46" preserveAspectRatio="none"><polyline points="0,40 20,36 40,38 60,28 80,24 100,16 120,10" fill="none" stroke="#34D1BF" stroke-width="2"/></svg></div>
+        <div class="kpi"><b>Rankings</b><small>Search Console</small><svg viewBox="0 0 120 46" preserveAspectRatio="none"><polyline points="0,34 20,30 40,32 60,22 80,20 100,14 120,12" fill="none" stroke="#5AA2FF" stroke-width="2"/></svg></div>
+        <div class="kpi"><b>CTR</b><small>Search Console</small><svg viewBox="0 0 120 46" preserveAspectRatio="none"><g fill="#2F4C73"><rect x="4" y="30" width="14" height="16"/><rect x="24" y="26" width="14" height="20"/><rect x="44" y="28" width="14" height="18"/><rect x="64" y="20" width="14" height="26"/><rect x="84" y="16" width="14" height="30"/></g><rect x="104" y="10" width="14" height="36" fill="#34D1BF"/></svg></div>
+        <div class="kpi"><b>Conversions</b><small>GA4</small><svg viewBox="0 0 120 46" preserveAspectRatio="none"><path d="M0 42 L20 38 L40 36 L60 30 L80 26 L100 18 L120 14 V46 H0Z" fill="rgba(52,209,191,.18)"/><polyline points="0,42 20,38 40,36 60,30 80,26 100,18 120,14" fill="none" stroke="#34D1BF" stroke-width="2"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 14 -->
+<section class="station" id="s14">
+  <div><div class="num">14</div></div>
+  <div class="card">
+    <div class="head"><div class="ico"><svg><use href="#i-tool"/></svg></div><div><h2>PROFESSIONAL SEO TOOLKIT</h2><p class="goal">The tools used at each stage, grouped by job.</p></div></div>
+    <div class="groups">
+      <div class="grp"><h3>Google</h3><ul class="chips"><li>Search Console</li><li>Analytics</li><li>PageSpeed Insights</li><li>Keyword Planner</li><li>Business Profile</li><li>Rich Results Test</li><li>Schema Validator</li></ul></div>
+      <div class="grp"><h3>SEO Software</h3><ul class="chips"><li>Ahrefs</li><li>Semrush</li><li>Screaming Frog</li><li>Sitebulb</li></ul></div>
+      <div class="grp"><h3>Developer Tools</h3><ul class="chips"><li>Chrome DevTools</li><li>Lighthouse</li><li>HTML inspection</li><li>Network panel</li><li>Performance panel</li></ul></div>
+      <div class="grp"><h3>Content / AI</h3><ul class="chips"><li>Content research tools</li><li>AI assistants</li><li>SERP analysis tools</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 15 -->
+<section class="station major" id="s15">
+  <div><div class="num">15</div></div>
+  <div class="card">
+    <div class="head"><div class="ico"><svg><use href="#i-list"/></svg></div><div><h2>PROFESSIONAL SEO AUDIT PROCESS</h2><p class="goal">The order a full audit runs in, from brief to action plan.</p></div></div>
+    <ol class="audit">
+      <li>Business Understanding</li><li>Keyword Research</li><li>Competitor Analysis</li><li>Technical Audit</li><li>Indexation</li><li>Site Architecture</li><li>On-page SEO</li><li>Content</li><li>Internal Linking</li><li>Schema</li><li>Page Speed</li><li>Backlinks</li><li>Local / International</li><li>AEO / GEO</li><li>CRO</li><li>Report</li><li>Prioritized Action Plan</li>
+    </ol>
+  </div>
+</section>
+
+<!-- 16 -->
+<section class="station" id="s16">
+  <div><div class="num">16</div></div>
+  <div class="card">
+    <div class="head"><div class="ico"><svg><use href="#i-brief"/></svg></div><div><h2>FROM SEO SPECIALIST TO SEO CONSULTANT</h2><p class="goal">Turn delivery skills into strategy clients pay retainers for.</p></div></div>
+    <div class="ladder-wrap">
+      <div class="ladder" aria-label="Progression from learn to consult">
+        <div class="rung" style="--i:0;--a:.06"><small>1</small><b>Learn</b></div>
+        <div class="rung" style="--i:1;--a:.09"><small>2</small><b>Practice</b></div>
+        <div class="rung" style="--i:2;--a:.12"><small>3</small><b>Audit</b></div>
+        <div class="rung" style="--i:3;--a:.15"><small>4</small><b>Implement</b></div>
+        <div class="rung" style="--i:4;--a:.18"><small>5</small><b>Measure</b></div>
+        <div class="rung" style="--i:5;--a:.21"><small>6</small><b>Optimize</b></div>
+        <div class="rung" style="--i:6;--a:.24"><small>7</small><b>Report</b></div>
+        <div class="rung" style="--i:7;--a:.28"><small>8</small><b>Strategize</b></div>
+        <div class="rung" style="--i:8;--a:.34"><small>9</small><b>Consult</b></div>
+      </div>
+    </div>
+    <div class="grp" style="margin-top:18px"><h3>Consulting skills</h3>
+      <ul class="chips"><li>Client Discovery</li><li>SEO Audit</li><li>SEO Strategy</li><li>Roadmap</li><li>Prioritization</li><li>Implementation</li><li>Reporting</li><li>Client Communication</li><li>ROI</li><li>Revenue Attribution</li><li>Retainers</li><li>SEO Growth Strategy</li></ul>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<section class="finale" aria-labelledby="stack-title">
+  <h2 id="stack-title">THE FINAL SKILL STACK</h2>
+  <ul class="stack">
+    <li><span></span><b>TECHNICAL SEO</b></li>
+    <li><span>+</span><b>ON-PAGE SEO</b></li>
+    <li><span>+</span><b>CONTENT SEO</b></li>
+    <li><span>+</span><b>SHOPIFY SEO</b></li>
+    <li><span>+</span><b>ECOMMERCE SEO</b></li>
+    <li><span>+</span><b>LINK BUILDING</b></li>
+    <li><span>+</span><b>LOCAL SEO</b></li>
+    <li><span>+</span><b>INTERNATIONAL SEO</b></li>
+    <li><span>+</span><b>AEO / GEO</b></li>
+    <li><span>+</span><b>ANALYTICS</b></li>
+    <li><span>+</span><b>CRO</b></li>
+  </ul>
+  <div class="result"><span>=</span><b>MODERN SEO CONSULTANT</b></div>
+
+  <div class="footer">
+    <div class="flow">
+      <span class="fn">MASTER THE FUNDAMENTALS</span><i class="fa"></i><span class="fn">BUILD REAL PROJECTS</span><i class="fa"></i><span class="fn">MEASURE RESULTS</span><i class="fa"></i><span class="fn">DEVELOP SPECIALIZATION</span><i class="fa"></i><span class="fn end">BECOME A CONSULTANT</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<dialog class="topic" id="topic" aria-labelledby="t-title">
+  <div class="m-top">
+    <div class="m-crumb" id="t-crumb"></div>
+    <div class="m-actions">
+      <button class="m-btn" id="t-prev" aria-label="Previous topic">‹</button>
+      <span class="m-pos" id="t-pos"></span>
+      <button class="m-btn" id="t-next" aria-label="Next topic">›</button>
+      <button class="m-btn" id="t-close" aria-label="Close">✕</button>
+    </div>
+  </div>
+  <div class="m-scroll" id="t-scroll">
+    <h2 id="t-title"></h2>
+    <p class="m-lead" id="t-what"></p>
+    <div class="m-grid">
+      <div class="m-panel">
+        <h3>Key concepts</h3>
+        <ul class="m-keys" id="t-keys"></ul>
+        <h3>Practice task</h3>
+        <p class="m-task" id="t-practice"></p>
+        <button class="m-btn" id="t-learned" aria-pressed="false">Mark as learned</button>
+      </div>
+      <div class="m-panel">
+        <h3>Learning resources</h3>
+        <ul class="m-res" id="t-res"></ul>
+      </div>
+    </div>
+    <section class="m-prompt" aria-labelledby="p-h">
+      <div class="m-ph">
+        <h3 id="p-h">AI study prompt</h3>
+        <div class="m-modes" id="t-modes">
+          <button class="m-btn" data-mode="teach" aria-pressed="true">Teach me</button>
+          <button class="m-btn" data-mode="quiz" aria-pressed="false">Quiz me</button>
+          <button class="m-btn" data-mode="practice" aria-pressed="false">Practice project</button>
+          <button class="m-btn" data-mode="client" aria-pressed="false">Explain to a client</button>
+        </div>
+      </div>
+      <div class="m-row"><label for="t-level">My level on this topic</label>
+        <select id="t-level"><option>Beginner</option><option selected>Intermediate</option><option>Advanced</option></select>
+      </div>
+      <textarea id="t-prompt" rows="14" aria-label="AI study prompt"></textarea>
+      <div class="m-pactions">
+        <button class="m-btn m-primary" id="t-copy">Copy prompt</button>
+        <a class="m-btn" id="t-claude" target="_blank" rel="noopener">Open in Claude</a>
+        <a class="m-btn" id="t-gpt" target="_blank" rel="noopener">Open in ChatGPT</a>
+        <span class="m-status" id="t-status" role="status"></span>
+      </div>
+      <details>
+        <summary>About me (added to every prompt, editable)</summary>
+        <textarea id="t-me" rows="3" aria-label="About me"></textarea>
+      </details>
+    </section>
+  </div>
+</dialog>
+
+<script>
+(function(){
+/* ---------- Resource library ---------- */
+const G="https://developers.google.com/search/docs/";
+const R={
+start:["SEO Starter Guide",G+"fundamentals/seo-starter-guide","Google Search Central"],
+hsw:["How Google Search works",G+"fundamentals/how-search-works","Google Search Central"],
+ess:["Google Search Essentials",G+"essentials","Google Search Central"],
+spam:["Spam policies for Google web search",G+"essentials/spam-policies","Google Search Central"],
+rsg:["Guide to Google Search ranking systems",G+"appearance/ranking-systems-guide","Google Search Central"],
+robots:["Introduction to robots.txt",G+"crawling-indexing/robots/intro","Google Search Central"],
+sitemap:["Sitemaps overview",G+"crawling-indexing/sitemaps/overview","Google Search Central"],
+canon:["Consolidate duplicate URLs (canonicalization)",G+"crawling-indexing/consolidate-duplicate-urls","Google Search Central"],
+noindex:["Block indexing with noindex",G+"crawling-indexing/block-indexing","Google Search Central"],
+redir:["Redirects and Google Search",G+"crawling-indexing/301-redirects","Google Search Central"],
+crawlb:["Managing crawl budget",G+"crawling-indexing/large-site-managing-crawl-budget","Google Search Central"],
+facet:["Managing faceted navigation URLs",G+"crawling-indexing/crawling-managing-faceted-navigation","Google Search Central"],
+pagin:["Pagination and incremental page loading",G+"specialty/ecommerce/pagination-and-incremental-page-loading","Google Search Central"],
+urls:["URL structure best practices",G+"crawling-indexing/url-structure","Google Search Central"],
+links:["Link best practices",G+"crawling-indexing/links-crawlable","Google Search Central"],
+title:["Influencing title links",G+"appearance/title-link","Google Search Central"],
+snip:["Control your snippets",G+"appearance/snippet","Google Search Central"],
+img:["Image SEO best practices",G+"appearance/google-images","Google Search Central"],
+sd:["Introduction to structured data",G+"appearance/structured-data/intro-structured-data","Google Search Central"],
+sdprod:["Product structured data",G+"appearance/structured-data/product","Google Search Central"],
+variants:["Product variant structured data",G+"appearance/structured-data/product-variants","Google Search Central"],
+revsd:["Review snippet structured data",G+"appearance/structured-data/review-snippet","Google Search Central"],
+faqsd:["FAQ structured data",G+"appearance/structured-data/faqpage","Google Search Central"],
+sdbc:["Breadcrumb structured data",G+"appearance/structured-data/breadcrumb","Google Search Central"],
+sdlocal:["Local business structured data",G+"appearance/structured-data/local-business","Google Search Central"],
+helpful:["Creating helpful, people-first content",G+"fundamentals/creating-helpful-content","Google Search Central"],
+genai:["Using generative AI content",G+"fundamentals/using-gen-ai-content","Google Search Central"],
+js:["JavaScript SEO basics",G+"crawling-indexing/javascript/javascript-seo-basics","Google Search Central"],
+mobile:["Mobile-first indexing best practices",G+"crawling-indexing/mobile/mobile-sites-mobile-first-indexing","Google Search Central"],
+cwv:["Core Web Vitals and Google Search",G+"appearance/core-web-vitals","Google Search Central"],
+http:["HTTP status codes and network errors",G+"crawling-indexing/http-network-errors","Google Search Central"],
+hreflang:["Tell Google about localized versions",G+"specialty/international/localized-versions","Google Search Central"],
+multireg:["Managing multi-regional and multilingual sites",G+"specialty/international/managing-multi-regional-sites","Google Search Central"],
+aif:["AI features and your website",G+"appearance/ai-features","Google Search Central"],
+fs:["Featured snippets",G+"appearance/featured-snippets","Google Search Central"],
+ecom:["Ecommerce SEO best practices",G+"specialty/ecommerce","Google Search Central"],
+rel:["Qualify your outbound links",G+"crawling-indexing/qualify-outbound-links","Google Search Central"],
+blog:["Google Search Central Blog","https://developers.google.com/search/blog","Google Search Central"],
+gsc:["Google Search Console","https://search.google.com/search-console/about","Google"],
+gschelp:["Search Console Help Center","https://support.google.com/webmasters","Google"],
+gscperf:["Search Console Performance report","https://support.google.com/webmasters/answer/7576553","Google"],
+ga4:["Google Analytics Help Center","https://support.google.com/analytics","Google"],
+vitals:["Web Vitals","https://web.dev/articles/vitals","web.dev"],
+lcp:["Largest Contentful Paint (LCP)","https://web.dev/articles/lcp","web.dev"],
+inp:["Interaction to Next Paint (INP)","https://web.dev/articles/inp","web.dev"],
+cls:["Cumulative Layout Shift (CLS)","https://web.dev/articles/cls","web.dev"],
+ttfb:["Time to First Byte (TTFB)","https://web.dev/articles/ttfb","web.dev"],
+lazy:["Browser-level image lazy loading","https://web.dev/articles/browser-level-image-lazy-loading","web.dev"],
+rb:["Eliminate render-blocking resources","https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources","Chrome for Developers"],
+psi:["PageSpeed Insights","https://pagespeed.web.dev/","Google"],
+rrt:["Rich Results Test","https://search.google.com/test/rich-results","Google"],
+sv:["Schema Markup Validator","https://validator.schema.org/","schema.org"],
+sorg:["schema.org vocabulary","https://schema.org/","schema.org"],
+shseo:["Shopify Help Center: SEO","https://help.shopify.com/en/manual/promoting-marketing/seo","Shopify"],
+liquid:["Liquid reference","https://shopify.dev/docs/api/liquid","Shopify.dev"],
+shperf:["Theme performance best practices","https://shopify.dev/docs/storefronts/themes/best-practices/performance","Shopify.dev"],
+markets:["Shopify Markets","https://help.shopify.com/en/manual/markets","Shopify"],
+moz:["Beginner's Guide to SEO","https://moz.com/beginners-guide-to-seo","Moz"],
+ahb:["Ahrefs Blog","https://ahrefs.com/blog/","Ahrefs"],
+aha:["Ahrefs Academy","https://ahrefs.com/academy","Ahrefs"],
+ahkw:["Keyword research guide","https://ahrefs.com/blog/keyword-research/","Ahrefs"],
+ahlb:["Link building guide","https://ahrefs.com/blog/link-building/","Ahrefs"],
+ahtech:["Technical SEO guide","https://ahrefs.com/blog/technical-seo/","Ahrefs"],
+ahon:["On-page SEO guide","https://ahrefs.com/blog/on-page-seo/","Ahrefs"],
+ahlocal:["Local SEO guide","https://ahrefs.com/blog/local-seo/","Ahrefs"],
+sema:["Semrush Academy","https://www.semrush.com/academy/","Semrush"],
+sf:["SEO Spider user guide","https://www.screamingfrog.co.uk/seo-spider/user-guide/","Screaming Frog"],
+sb:["Sitebulb resources","https://sitebulb.com/resources/","Sitebulb"],
+gbp:["Google Business Profile Help","https://support.google.com/business","Google"],
+localrank:["Tips to improve your local ranking","https://support.google.com/business/answer/7091","Google"],
+devtools:["Chrome DevTools","https://developer.chrome.com/docs/devtools","Chrome for Developers"],
+devnet:["Network panel","https://developer.chrome.com/docs/devtools/network","Chrome for Developers"],
+devperf:["Performance panel","https://developer.chrome.com/docs/devtools/performance","Chrome for Developers"],
+lh:["Lighthouse","https://developer.chrome.com/docs/lighthouse","Chrome for Developers"],
+kp:["Google Keyword Planner","https://ads.google.com/home/tools/keyword-planner/","Google Ads"],
+lseo:["LearningSEO.io roadmap","https://learningseo.io/","Aleyda Solis"],
+bwt:["Bing Webmaster Tools","https://www.bing.com/webmasters","Microsoft"]
+};
+const SD={s01:"start hsw moz",s02:"ahkw",s03:"ahb",s04:"ahon start",s05:"ahtech",s06:"helpful",s07:"shseo",s08:"ecom",s09:"ahlb",s10:"localrank",s11:"multireg",s12:"aif",s13:"gscperf",s14:"lseo",s15:"ahtech",s16:"lseo"};
+
+/* ---------- Topic content: [what it is + why it matters, key concepts, practice task, resources] ---------- */
+const T={
+"how search engines work":["Search engines discover URLs, fetch them, render the page, store what they understand in an index, then rank indexed pages for each query. Every other SEO skill maps to one of those stages.",["Discovery comes from links and sitemaps","A page can be crawled but not indexed","Ranking is decided per query, not per page"],"Pick one store URL and trace it through each stage using Search Console's URL Inspection tool.","hsw start moz"],
+"crawling":["Crawling is Googlebot requesting URLs it has discovered through links, sitemaps and redirects. If a page is not crawled, nothing else you do to it matters.",["robots.txt controls crawl access, not indexing","Server errors and slow responses reduce crawl rate","Internal links are the main discovery path"],"Open Settings → Crawl stats in Search Console and note response codes and file types crawled.","hsw robots crawlb"],
+"rendering":["Rendering is executing a page's HTML, CSS and JavaScript to see the final content, as a browser would. Content that only appears after JavaScript runs may be delayed or missed.",["Google renders with an evergreen Chromium","Critical content and links should exist in the initial HTML","Compare raw HTML with the rendered DOM"],"Use URL Inspection → View crawled page and compare it with View Source on an app-heavy product page.","js hsw devtools"],
+"indexing":["Indexing is Google storing and understanding a page so it can appear in results. Google decides whether and which version to index; you can only send signals.",["Canonicals, noindex and duplicates decide what gets indexed","'Crawled, currently not indexed' usually signals low value","Index only pages that deserve to rank"],"Review the Page indexing report and group the 'not indexed' reasons by URL type.","hsw noindex canon gsc"],
+"ranking":["Ranking is ordering indexed pages for a query based on relevance, quality, usability and context such as location and language. There is no single score; many systems weigh many signals.",["Relevance to intent comes first","Quality and trust separate close competitors","Results vary by location, language and device"],"Take one target keyword and write down why each of the top 5 results deserves its position.","rsg hsw moz"],
+"search intent":["Search intent is the goal behind a query: learning, comparing, buying or going somewhere. Google ranks the page type that best satisfies that goal, so matching it is non-negotiable.",["The current SERP shows the intent Google has inferred","Page type (product, collection, guide) must match","Mixed-intent SERPs need a clear primary angle"],"For 10 keywords, label the intent and the dominant page type on page one.","ahkw start moz"],
+"serps":["The search engine results page is everything shown for a query: organic results, ads, AI Overviews, shopping, local pack, videos and more. Its layout sets realistic click expectations.",["Position 1 can sit below many features","SERP features change CTR sharply","SERPs differ by device and country"],"Screenshot the SERP for 5 of your keywords on mobile and desktop and list every feature shown.","hsw fs moz"],
+"ranking signals":["Ranking signals are the inputs Google's systems use: content relevance, links, page experience, freshness, location and more. Most are documented only broadly, so focus on fundamentals over rumors.",["Google describes systems, not weights","Relevance and helpfulness outweigh small technical tweaks","Treat 'ranking factor' lists with skepticism"],"Read Google's ranking systems guide and map each system to something you can influence on a Shopify store.","rsg helpful blog"],
+"google search essentials":["Google Search Essentials are the official technical requirements, spam policies and key best practices a site must follow to be eligible to appear. It's the rulebook every SEO should know.",["Technical requirements are minimal but absolute","Spam policies define what gets demoted or removed","Best practices are where most gains come from"],"Read Search Essentials end to end and turn it into a one-page checklist for your stores.","ess spam start"],
+"white hat seo":["White hat SEO improves a site for users within search engine guidelines: better content, sound technical setup and earned links. It compounds over time and survives algorithm updates.",["Durable results, lower risk","Aligns SEO with UX and CRO","Slower than shortcuts but safe for clients"],"List the white hat actions you'd take in month one for a new Shopify client.","ess helpful"],
+"black hat seo":["Black hat SEO manipulates rankings against guidelines: link schemes, cloaking, scaled spam content, hidden text. Learn it to spot it in audits and protect clients, not to use it.",["Can trigger manual actions or algorithmic demotion","Bought links and PBNs are the most common risk","Scaled low-value AI content is explicitly spam"],"Read the spam policies and note which ones you have seen on real sites.","spam ess"],
+"seo terminology":["SEO has its own vocabulary: SERP, crawl budget, canonical, hreflang, E-E-A-T, CTR and more. Fluency lets you read documentation quickly and speak credibly to clients.",["Learn terms by the stage they belong to","Separate Google concepts from tool metrics (e.g. DR, KD)","Be able to explain each term in one plain sentence"],"Build a personal glossary of 50 terms with a one-line plain-English definition each.","moz start lseo"],
+
+"keyword discovery":["Keyword discovery is finding the terms your audience searches, using tools, Search Console data, competitors, autocomplete and customer language. It defines which pages you build and optimize.",["Start from products and customer problems","Search Console shows queries you already appear for","Competitor keyword lists reveal proven demand"],"Export 3 months of Search Console queries and group them by product category.","ahkw kp gsc"],
+"seed keywords":["Seed keywords are short, broad terms that describe your niche, like 'linen sofa'. You feed them into tools to expand into hundreds of related queries.",["Derive them from product types and collections","Each seed should map to a category","Keep them broad; tools do the expansion"],"Write 15 seed keywords for a store you know and expand each in a keyword tool.","ahkw kp"],
+"long-tail keywords":["Long-tail keywords are specific, lower-volume queries like 'grey linen 3 seater sofa'. Together they make up most searches and usually convert better.",["Lower competition, clearer intent","Often answered by product, filter or guide pages","Ideal for newer sites with little authority"],"Find 20 long-tail queries for one collection and decide which page should target each.","ahkw moz"],
+"short-tail keywords":["Short-tail keywords are broad, high-volume queries like 'sofas'. They are competitive with mixed intent, so they usually target category pages or the homepage.",["High volume, high difficulty","Ambiguous intent","Won through authority and strong collections"],"Check the SERP for 3 short-tail terms and note which types of store rank.","ahkw"],
+"search volume":["Search volume is the estimated monthly searches for a keyword. It's a rounded estimate that helps prioritize, not a traffic forecast.",["Tools disagree; use it for relative comparison","Seasonality matters a lot in ecommerce","Clicks can be far lower than volume due to SERP features"],"Compare the volume of 10 keywords in two tools and Keyword Planner and note the differences.","kp ahkw"],
+"keyword difficulty":["Keyword difficulty is a tool's estimate of how hard it is to reach page one, usually based on the backlinks of ranking pages. It is a proprietary metric, not a Google signal.",["Use it to compare, not as truth","Always check the actual SERP quality","Low-authority sites should target lower difficulty first"],"Pick 5 keywords with similar volume and different difficulty and inspect why their SERPs differ.","ahkw sema"],
+"cpc":["CPC (cost per click) is what advertisers pay in Google Ads for a keyword. High CPC usually signals commercial value, which helps prioritize SEO targets.",["A proxy for buyer intent","Useful for estimating traffic value","Varies by country and season"],"Sort a keyword list by CPC and check whether the top terms are transactional.","kp"],
+"informational":["Informational queries seek knowledge, like 'how to clean a linen sofa'. Guides and articles serve them, building awareness and topical authority.",["Rarely convert directly","Should feed internal links toward products","Most exposed to AI Overviews"],"Outline 3 informational articles that each link to a relevant collection.","start moz"],
+"commercial":["Commercial investigation queries compare options before buying, like 'best linen sofas'. Buying guides, comparisons and strong collection pages serve them.",["Shoppers are close to a decision","Reviews and honest comparisons win","Strong internal links to products"],"Find 10 'best' or 'vs' queries in your niche and plan the page type for each.","ahkw moz"],
+"transactional":["Transactional queries show intent to buy, like 'buy linen sofa online'. Product and collection pages should target them.",["Highest conversion value","Price, stock and shipping info matter","Product schema can earn rich results"],"Map 10 transactional keywords to existing product or collection URLs.","ecom sdprod"],
+"navigational":["Navigational queries look for a specific brand or site. You should own your brand SERP; other brands' terms are rarely worth targeting.",["Brand search volume is a health metric","Sitelinks come from clear site structure","Control as much of the brand SERP as possible"],"Search your brand and list everything on page one that you control.","gsc"],
+"keyword mapping":["Keyword mapping assigns each keyword group to exactly one URL. It prevents cannibalization and shows which pages still need to be created.",["One primary topic per page","Map to existing URLs before creating new ones","Keep the map in a shared sheet"],"Build a keyword map for one store: cluster, intent, target URL, status.","ahkw"],
+"keyword clustering":["Keyword clustering groups keywords that Google treats as the same topic, usually by comparing overlapping top results. Each cluster becomes one page.",["SERP overlap is the most reliable method","Prevents thin, duplicate pages","Makes mapping much faster"],"Cluster 50 keywords manually by SERP overlap, then compare with a clustering tool.","ahkw sema"],
+"serp analysis":["SERP analysis studies the current top results to understand intent, page types, depth, features and competitor strength. It tells you what it takes to rank.",["Look at page type, format and angle","Note which SERP features appear","Decide honestly whether you can compete"],"Write a SERP analysis for one keyword: intent, formats, gaps, verdict.","ahkw fs"],
+"entity research":["Entity research identifies the people, products, brands, materials and concepts connected to a topic. Covering them clearly helps search engines understand relevance.",["Entities are things, not strings","Knowledge panels and 'People also ask' reveal them","Use them naturally in copy and schema"],"List the 20 core entities for one product category and check your copy covers them.","sd sorg"],
+
+"organic competitors":["Organic competitors are sites ranking for the same keywords as you, which may differ from your business competitors. They are the benchmark for SEO work.",["Found by keyword overlap in tools","Often include publishers and marketplaces","Change from category to category"],"List the top 5 organic competitors for your 3 main collections.","ahb sema"],
+"serp competitors":["SERP competitors are the pages ranking for one specific query. Studying them shows exactly what that query rewards.",["Competition is per query","Page type matters as much as domain","Marketplaces and publishers count too"],"Tabulate the top 10 pages for one keyword: type, length, links, schema.","ahkw"],
+"competitor keywords":["Competitor keyword research exports the queries competitors rank for, revealing demand and page ideas you're missing.",["Filter to positions 1–20","Group by their URLs to see their strategy","Keep only terms relevant to your products"],"Export a competitor's top 200 keywords and tag the ones you don't rank for.","ahb sema"],
+"keyword gap":["A keyword gap is the set of terms competitors rank for and you don't. It's one of the fastest ways to build a prioritized page and content plan.",["Compare 2–4 competitors at once","Prioritize terms several competitors share","Map gaps to new or existing pages"],"Run a keyword gap for one store and turn the top 20 into actions.","ahb sema"],
+"content gap":["A content gap is a topic or page type competitors cover and you don't, or cover more thoroughly. Closing it builds topical coverage.",["Compare page types, not just keywords","Compare depth and subtopics","Prioritize by business value"],"Compare your blog and collection list with a competitor's and list missing topics.","ahb helpful"],
+"backlink gap":["A backlink gap shows sites linking to competitors but not to you. They are the warmest link-building prospects.",["Sites linking to several competitors are best","Work out why they linked","Build outreach lists from it"],"Find 20 domains linking to two competitors and not you, and note each link's reason.","ahlb ahb"],
+"top pages":["Top pages reports show which competitor URLs earn the most organic traffic or links. They reveal what actually works in your niche.",["Sort by traffic and by links separately","Look for repeatable formats","Check page type and intent"],"Review a competitor's top 20 pages and list three formats you could do better.","ahb"],
+"traffic sources":["Traffic source analysis estimates where competitors get visits: organic, paid, social, referral. It shows how dependent they are on search.",["Third-party estimates are rough","Useful for spotting paid-heavy competitors","Compare against your own GA4 split"],"Compare your GA4 channel split with a competitor's estimated split.","ga4"],
+"serp features":["SERP features are non-standard results: AI Overviews, featured snippets, People also ask, image packs, shopping, videos, local pack. Winning them changes visibility dramatically.",["Some need structured data","Some reduce clicks to organic results","Track which features your keywords trigger"],"For 20 keywords, record which SERP features appear and who owns them.","fs sd aif"],
+"content structure":["Content structure is how a page organizes information with headings, sections, lists, tables and FAQs. Clear structure helps users, snippets and AI systems extract answers.",["One H1 and a logical H2/H3 hierarchy","Answer the main question early","Use lists and tables for scannable facts"],"Rewrite one collection description into a clear heading hierarchy.","start helpful"],
+"internal linking":["Internal linking connects your own pages. It helps discovery, spreads authority and tells search engines which pages matter most.",["Link from strong pages to priority pages","Use descriptive anchor text","Avoid orphan and overly deep pages"],"Crawl a store and list priority pages with fewer than 5 internal links.","links start sf"],
+"competitor architecture":["Competitor architecture analysis looks at how competitors structure categories, filters, URLs and navigation. It often reveals landing pages you're missing.",["Map their category tree","Note which filter pages they index","Compare click depth to key pages"],"Crawl one competitor and diagram its category structure three levels deep.","sf ecom"],
+
+"title tags":["The title tag is the page title shown in search results and browser tabs. It's one of the strongest on-page relevance signals and drives click-through rate.",["Lead with the primary keyword","Unique per page, roughly 50–60 characters","Google may rewrite titles it finds weak"],"Audit titles on 20 product pages and rewrite the five weakest.","title start"],
+"meta descriptions":["The meta description is a page summary Google may show as the snippet. It doesn't directly affect ranking but strongly influences clicks.",["Write for the searcher and include the benefit","Unique per page","Google often rewrites it from page content"],"Write meta descriptions for 5 collections and compare CTR in Search Console after 4 weeks.","snip"],
+"h1–h6":["Headings H1–H6 structure a page's content. The H1 states the main topic; H2–H6 organize subtopics for readers and search engines.",["One clear H1 per page","Don't choose heading levels for styling","Themes often misuse headings, so check the HTML"],"Inspect heading output on a theme's product template and fix misused tags.","start devtools"],
+"url optimization":["URL optimization means short, readable, descriptive URLs. On Shopify you control the handle, not the prefix.",["Lowercase, hyphens, no clutter","Changing URLs needs redirects","One URL per piece of content"],"Fix product handles that are auto-generated or duplicated with '-1'.","urls shseo"],
+"keyword placement":["Keyword placement means using the primary term and its variants in the title, H1, opening copy, URL and image alt where natural. It's about clarity, not density.",["Prioritize title, H1 and first paragraph","Use variants and synonyms","Never stuff"],"Check one page's primary keyword appears in title, H1, URL and first 100 words.","start ahon"],
+"search intent alignment":["Search intent alignment means the page type and content match what the searcher wants. A perfect article won't rank for a query that wants a collection page.",["Check the SERP before writing","Match format, depth and angle","Pages stuck on page 2 are often misaligned"],"Find 3 pages ranking 8–20 and check whether their intent is mismatched.","helpful ahkw"],
+"semantic seo":["Semantic SEO optimizes for meaning: covering the related concepts, entities and questions so search engines understand the full topic, not just a keyword.",["Cover subtopics searchers expect","Use related terms naturally","Link related pages together"],"List the subtopics the top 3 results cover that one of your guides doesn't.","helpful"],
+"entities":["Entities are distinct things search engines recognize: brands, products, places, people, materials. Naming and describing them clearly improves understanding.",["Be explicit about your brand and products","Structured data declares entities formally","Consistent naming across the web helps"],"Add Organization and Product schema and check your brand name is consistent everywhere.","sd sorg"],
+"image alt text":["Alt text describes an image for screen readers and search engines. It's an accessibility requirement and helps image search.",["Describe the image specifically","Include product details naturally","Decorative images get empty alt"],"Audit alt text on 10 product pages and write specific descriptions.","img"],
+"image optimization":["Image optimization means correct format, size, compression and markup so images load fast and are understood. Images are usually the largest page weight on a store.",["Serve responsive sizes with srcset","Use modern formats and compression","Set width and height to avoid layout shift"],"Measure image weight on a product page in DevTools and reduce it with correct image_url sizes.","img lcp shperf"],
+"breadcrumbs":["Breadcrumbs show a page's position in the hierarchy and link back up the tree. They help navigation and internal linking, and can appear in search results.",["Reflect the real category path","Mark up with BreadcrumbList schema","Shopify themes often need custom logic"],"Implement breadcrumbs in a product template with BreadcrumbList JSON-LD.","sdbc"],
+"anchor text":["Anchor text is the clickable text of a link. It tells users and search engines what the target page is about.",["Descriptive beats 'click here'","Internal anchors can be fairly exact","Keep it natural and varied"],"Review internal links to one collection and improve vague anchors.","links"],
+"duplicate content":["Duplicate content is the same or very similar content at multiple URLs. It's rarely penalized but splits signals and wastes crawling.",["Common in ecommerce: variants, filters, collection paths","Consolidate with canonicals or redirects","Write unique copy for key pages"],"Crawl a store and list duplicate titles and near-duplicate pages.","canon sf"],
+"canonical tags":["A canonical tag tells search engines which URL is the preferred version of duplicate content. It's a strong hint, not a directive.",["Self-reference on every indexable page","Point to an indexable URL returning 200","Don't combine canonical-to-another-URL with noindex"],"Check canonical output on product, collection-product and variant URLs.","canon"],
+
+"robots.txt":["robots.txt tells crawlers which paths they may request. It controls crawling, not indexing: blocked URLs can still be indexed if linked.",["Block crawl waste like internal search and cart","Never block resources needed for rendering","Reference the sitemap location"],"Read a store's robots.txt and explain every rule.","robots"],
+"xml sitemap":["An XML sitemap lists URLs you want crawled and indexed. It helps discovery, especially for large or new sites.",["Only canonical, indexable 200 URLs","Submit in Search Console","Keep lastmod accurate"],"Submit a sitemap and compare submitted vs indexed counts.","sitemap gsc"],
+"crawl budget":["Crawl budget is how many URLs Googlebot will crawl on a site in a period. It matters mostly for large sites with many parameter or filter URLs.",["Small stores rarely hit limits","Faceted URLs are the usual waste","Fast, healthy servers get crawled more"],"Check Crawl stats and identify which URL patterns take most requests.","crawlb facet"],
+"crawl depth":["Crawl depth is how many clicks a page is from the homepage. Deep pages get crawled less and are treated as less important.",["Keep priority pages within 3 clicks","Use navigation, collections and related links","Pagination can push products deep"],"Crawl a store and list products deeper than 4 clicks.","sf links"],
+"click depth":["Click depth is the number of clicks from the homepage to a page. Lower depth signals importance and helps crawling.",["Aim for key pages within 3 clicks","Flatten with better internal links","Recheck after navigation changes"],"Chart the click depth distribution from a crawl and fix the deepest priority pages.","sf links"],
+"orphan pages":["Orphan pages have no internal links pointing to them. Search engines struggle to find them and treat them as unimportant.",["Compare sitemap and analytics URLs with crawl URLs","Common with old products and landing pages","Link them or retire them"],"Find orphans by comparing a crawl with the sitemap and GA4 landing pages.","sf links"],
+"broken links":["Broken links point to pages returning errors, usually 404. They waste crawling, lose link value and frustrate users.",["Fix internal links at the source","Redirect valuable broken URLs","Check external links pointing to your 404s"],"Run a crawl and fix every internal link returning 4xx.","sf http"],
+"redirect chains":["A redirect chain is several redirects in a row (A→B→C). Chains slow users and crawlers and can lose signals.",["Redirect straight to the final URL","Update internal links to final URLs","Common after repeated migrations"],"Find chains in a crawl and flatten them in Shopify's URL redirects.","redir sf"],
+"noindex":["noindex is a meta robots directive that keeps a page out of the index. The page must be crawlable for Google to see it.",["Don't block noindexed pages in robots.txt","Use for thin, utility or duplicate pages","Check templates for accidental noindex"],"Add noindex to a thin template via Liquid and verify with URL Inspection.","noindex"],
+"redirects":["Redirects send users and crawlers from one URL to another. Permanent redirects pass signals and are essential for migrations and URL changes.",["301/308 for permanent moves","Redirect to the most relevant page, not the homepage","Maintain redirect maps after migrations"],"Plan a redirect map for 10 discontinued products.","redir"],
+"duplicate urls":["Duplicate URLs are different addresses serving the same content, often from parameters, tracking codes, trailing slashes or platform paths.",["Pick one version and canonicalize","Link internally only to canonical URLs","Parameters are the usual source"],"Search a crawl for URLs that differ only by parameters.","canon urls"],
+"url parameters":["URL parameters (?sort=, ?filter=, ?variant=) create URL variations. They are a main source of duplicates and crawl waste.",["Decide which parameters create indexable value","Canonicalize or block the rest","Never link internally to tracking parameters"],"List every parameter in a crawl and decide: index, canonical or block.","urls facet"],
+"pagination":["Pagination splits long lists across pages (?page=2). Each page should be crawlable and self-canonical so products deeper in the list are found.",["Don't canonical page 2+ to page 1","Use crawlable links, not only infinite scroll","Keep page counts reasonable"],"Check a large collection's paginated pages for canonical and link output.","pagin"],
+"faceted navigation":["Faceted navigation lets users filter by attributes like size and color, often creating thousands of URL combinations. It's the biggest technical risk on ecommerce sites.",["Most filter combinations shouldn't be indexed","Index only facets with real search demand","Control with robots rules, canonicals and linking"],"Decide which 3 facets on a store deserve indexable landing pages and why.","facet ecom"],
+"url structure":["URL structure is the pattern of your addresses. It should be logical, readable and consistent so users and crawlers understand the hierarchy.",["Simple, descriptive, lowercase","Consistent patterns per page type","Avoid unnecessary parameters"],"Document a site's URL patterns and flag inconsistencies.","urls"],
+"site hierarchy":["Site hierarchy is how pages are organized from broad to specific: home, categories, subcategories, products. A clear hierarchy distributes authority and aids navigation.",["Broad categories near the top","Every page has a logical parent","Reflect how customers shop"],"Sketch a store's hierarchy and identify missing category levels.","ecom start"],
+"information architecture":["Information architecture is how content is grouped, labeled and linked. For SEO it decides which pages exist and how authority flows between them.",["Base groups on search demand and user logic","Navigation labels should use searched terms","Plan before building, not after"],"Card-sort a store's products into a category tree and compare with your keyword clusters.","ecom links"],
+"core web vitals":["Core Web Vitals are Google's user experience metrics: LCP (loading), INP (responsiveness) and CLS (visual stability), measured from real Chrome users.",["Field data (CrUX) matters more than lab scores","Good: LCP ≤ 2.5s, INP ≤ 200ms, CLS ≤ 0.1","Fix by template, not page by page"],"Open the Core Web Vitals report in Search Console and pick the worst template to fix.","vitals cwv psi"],
+"lcp":["Largest Contentful Paint measures when the biggest visible element, usually a hero or product image, renders. Good is 2.5 seconds or less.",["Prioritize or preload the LCP image","Never lazy-load above-the-fold images","Cut server time and render-blocking resources"],"Find the LCP element on a product page with DevTools and improve it.","lcp shperf"],
+"inp":["Interaction to Next Paint measures how quickly a page responds to clicks, taps and key presses. Good is 200 ms or less. Heavy JavaScript and apps are the usual cause.",["Break up long tasks","Defer non-critical app scripts","Audit third-party scripts"],"Record a Performance trace while clicking variant selectors and find the long tasks.","inp devperf"],
+"cls":["Cumulative Layout Shift measures unexpected layout movement while a page loads. Good is 0.1 or less.",["Set image and embed dimensions","Reserve space for banners and app widgets","Don't insert content above existing content"],"Use the Performance panel's layout shift markers to find what moves on load.","cls"],
+"ttfb":["Time to First Byte is how long the server takes to start responding. It's the foundation of every loading metric.",["Shopify hosting is fast; complex Liquid adds time","Heavy loops and many sections slow rendering","Profile Liquid with Shopify Theme Inspector"],"Measure TTFB on home, collection and product pages and compare.","ttfb shperf"],
+"javascript":["JavaScript powers interactivity but is often the biggest performance cost. Unused, render-blocking or third-party scripts hurt INP and LCP.",["Defer or async non-critical scripts","Remove leftover code from uninstalled apps","Load features on interaction"],"List every script on a product page in the Network panel and flag what isn't needed.","devnet shperf"],
+"css":["CSS controls presentation; large or render-blocking stylesheets delay first paint.",["Inline critical CSS, defer the rest","Remove unused CSS","Avoid loading app stylesheets on every page"],"Use DevTools Coverage to measure unused CSS on the homepage.","rb devtools"],
+"lazy loading":["Lazy loading defers offscreen images and iframes until needed. Applied to above-the-fold images, it hurts LCP.",["loading='lazy' below the fold only","Never lazy-load the LCP image","Shopify's image_tag supports it"],"Check that a theme's first product image isn't lazy-loaded.","lazy lcp"],
+"render blocking":["Render-blocking resources are CSS and scripts that must load before the page can paint. Reducing them speeds up first render.",["Defer non-critical scripts","Split CSS by template","Preload key fonts carefully"],"Run Lighthouse and fix the render-blocking resources it lists.","rb lh"],
+"https":["HTTPS encrypts traffic and is a baseline trust and ranking requirement. Shopify provides it; mixed content and old http links are the usual issues.",["Every URL should resolve to HTTPS","No mixed content","Update hard-coded http links"],"Crawl a site and list any http:// internal links or resources.","http"],
+"mobile seo":["Google indexes the mobile version of your pages. Content, links and structured data must be equivalent on mobile.",["Content hidden on mobile may be ignored","Tap targets and readability matter","Test on real devices"],"Compare mobile and desktop rendering of a collection page for missing content.","mobile"],
+"javascript seo":["JavaScript SEO makes sure content and links rendered by JavaScript are crawlable and indexable. It's critical for headless stores and app-injected content.",["Links must be real <a href> elements","Critical content in the initial HTML when possible","Test with URL Inspection"],"Check whether a review app's content appears in Google's rendered HTML.","js"],
+"structured data":["Structured data is code, usually JSON-LD using schema.org, that describes page content explicitly. It can enable rich results and helps machines understand entities.",["Use JSON-LD","Mark up only visible content","Validate with the Rich Results Test"],"Add Product and BreadcrumbList JSON-LD to a theme and validate it.","sd rrt sorg"],
+"international tags":["International tags (hreflang) tell Google which language and region each page version targets so users see the right one.",["Reciprocal references between all versions","Include x-default","Use correct ISO codes"],"Check hreflang output on a Shopify Markets store.","hreflang markets"],
+"404 / 410":["404 means not found; 410 means permanently gone. Both drop pages from the index; 410 may be processed slightly faster.",["Missing pages must not return 200 (soft 404)","Redirect only when a relevant replacement exists","A helpful 404 page keeps users on site"],"Test a removed product URL's status code and decide: redirect or 404.","http"],
+"301 / 302":["301 is a permanent redirect; 302 is temporary. Google treats long-lived 302s like 301s, but using the right one keeps intent clear.",["301 for migrations and removed pages","302 for genuinely temporary moves","Shopify URL redirects are 301s"],"Check a redirect's status code in the DevTools Network panel.","redir http"],
+
+"content strategy":["Content strategy decides what to create, for whom and why, tied to business goals and search demand. For stores, it connects informational content to products.",["Start from customer questions and keyword gaps","Balance traffic content and revenue content","Plan maintenance, not just creation"],"Draft a 3-month content plan where every piece links to a collection.","helpful ahb"],
+"topic research":["Topic research finds the subjects your audience cares about and the questions within them, using keyword tools, forums, reviews and 'People also ask'.",["Mine customer reviews and support tickets","Use PAA and related searches","Group questions into topics"],"Collect 30 real customer questions for one product category.","ahkw"],
+"topic clusters":["A topic cluster is a pillar page on a broad topic linked with supporting pages on subtopics. It organizes content and signals depth.",["Pillar links to every supporting page","Supporting pages link back and to each other","One cluster per core category"],"Design a cluster: one pillar, 8 supporting articles and the collections they link to.","helpful links"],
+"pillar pages":["A pillar page covers a broad topic comprehensively and links to detailed subpages. On stores, a strong collection or buying guide can act as the pillar.",["Broad, well-structured, kept current","Hub of internal links","Targets the cluster's head term"],"Outline a pillar guide for one product category.","helpful"],
+"supporting articles":["Supporting articles cover specific subtopics of a pillar in depth, target long-tail queries and link back to the pillar and products.",["One subtopic per article","Link to pillar and relevant products","No overlapping topics"],"Write briefs for 3 supporting articles in one cluster.","helpful"],
+"semantic coverage":["Semantic coverage is how completely a page covers the concepts and questions a searcher expects for the topic.",["Compare subtopics with top results","Answer related questions","Add missing entities naturally"],"Gap-check one article against the top 3 results and add missing sections.","helpful"],
+"topical authority":["Topical authority is the perception that a site thoroughly covers a subject, built through connected, high-quality content over time.",["Depth in a niche beats breadth","Internal linking ties it together","Consistency over months"],"Map existing content by topic and find the topic you're closest to owning.","helpful"],
+"content depth":["Content depth is how thoroughly a page satisfies the query, not its word count. Some queries need a paragraph; others need a full guide.",["Match depth to intent","Cut filler","Add specifics: data, examples, comparisons"],"Rewrite a thin collection description to answer real buyer questions.","helpful"],
+"content quality":["Content quality is originality, accuracy, usefulness and presentation. Google's helpful content guidance defines what it looks for.",["Written for people first","Shows real expertise","Accurate and well presented"],"Score 5 pages with Google's helpful content self-assessment questions.","helpful"],
+"information gain":["Information gain is what your page adds beyond what already ranks: original data, testing, photos, expert opinion. It's the main way to stand out.",["Original experience and data","Unique visuals and examples","Don't just rewrite the top results"],"Add one piece of original information (test, photo, data) to an existing guide.","helpful"],
+"e-e-a-t":["E-E-A-T stands for Experience, Expertise, Authoritativeness and Trust. It's the framework from Google's rater guidelines for judging quality; trust matters most.",["Show real experience and authors","Clear business info, policies and contact","Off-site reviews and reputation count"],"Audit a store's About, policy and author pages for trust signals.","helpful"],
+"content refresh":["Content refresh updates existing pages with current information, better structure and new insight. It often recovers declining traffic faster than new content.",["Find pages losing clicks in Search Console","Update facts, dates and products","Keep the same URL"],"Find 5 pages with declining clicks year over year and plan refreshes.","gscperf"],
+"content pruning":["Content pruning removes, merges or noindexes low-value pages that dilute quality and waste crawling.",["Merge overlapping articles","Redirect removed pages when relevant","Check traffic and links before deleting"],"List blog posts with zero clicks in 12 months and decide keep, merge or remove.","gscperf redir"],
+"content optimization":["Content optimization improves existing pages to better match intent, cover the topic and earn clicks.",["Start with pages ranking 5–20","Improve titles, structure and coverage","Add internal links"],"Optimize one page ranking on page 2 and track it for 6 weeks.","gscperf ahon"],
+"ai-assisted content":["AI-assisted content uses AI to research, outline or draft, with humans adding expertise, accuracy and originality. Google judges quality, not how content was produced.",["Fact-check everything","Add first-hand experience","Scaled low-value AI content violates spam policies"],"Draft a product description with AI, then edit it with specifics only you know.","genai spam"],
+"editorial strategy":["Editorial strategy defines voice, standards, workflow and calendar for content production.",["Style guide and briefs","Review and fact-check steps","Publishing and update cadence"],"Write a one-page editorial guideline for a client blog.","helpful"],
+
+"homepage":["The homepage is the strongest page on most stores. It should target the brand and core category terms and link to priority collections.",["Clear title with brand and main category","Prominent links to key collections","Organization schema"],"Audit a homepage's title, H1 and links to collections.","shseo"],
+"collections":["Collections are Shopify's category pages and the main target for commercial keywords. They're usually the most valuable SEO pages on a store.",["Unique title, meta and copy","Clean handle","Linked from main navigation"],"Rewrite the SEO title, meta and intro copy of one collection.","shseo ecom"],
+"products":["Product pages target specific, transactional queries and can earn rich results with correct schema.",["Unique descriptions, not manufacturer copy","Product schema with price and availability","Reviews and FAQs add depth"],"Improve one product page's title, description and schema.","shseo sdprod"],
+"pages":["Shopify Pages are static pages like About, Contact and FAQ. They build trust and can target informational or brand terms.",["Strong About and policy pages support trust","Custom templates for landing pages","Avoid thin duplicates"],"Review a store's Pages and flag thin or duplicate ones.","shseo helpful"],
+"blogs":["Shopify blogs host content that targets informational queries and links to products.",["Plan blogs by topic cluster","Blog tag pages can create thin URLs","Link articles to collections"],"Plan a blog structure for a store with 2–3 clear topics.","shseo helpful"],
+"articles":["Articles are individual blog posts. Each should target one topic and guide readers toward relevant products.",["Clear H1 and structure","Article schema","Product links in context"],"Optimize one article with better headings and product links.","shseo sd"],
+"shopify canonicals":["Shopify creates product URLs inside collections (/collections/x/products/y) and canonicalizes them to /products/y. Themes that link to the collection path waste crawling.",["Link to /products/ URLs directly","Check canonical_url output","Variant URLs canonicalize to the product"],"Change a theme's product cards to use product.url instead of the within-collection URL.","canon shseo liquid"],
+"sitemap":["Shopify auto-generates sitemap.xml with products, collections, pages and articles. You can't edit it directly, only influence what's included.",["Submit /sitemap.xml in Search Console","Unpublished items drop out","Noindexed items may still be listed"],"Open a store's sitemap index and review each child sitemap.","sitemap shseo"],
+"s07:robots.txt":["Shopify ships a default robots.txt that blocks cart, checkout, internal search and some filter paths. You can customize it with the robots.txt.liquid template.",["The default rules are sensible","Customize to block extra crawl waste","Test changes carefully"],"Create robots.txt.liquid on a dev store and add one rule safely.","robots shseo"],
+"s07:url structure":["Shopify URLs use fixed prefixes: /products/, /collections/, /pages/, /blogs/. You control the handles, not the structure.",["Short, descriptive handles","Changing a handle needs a redirect (Shopify can create one)","Market subfolders via Shopify Markets"],"Clean up 10 messy handles and confirm redirects were created.","urls shseo"],
+"s07:redirects":["Shopify's URL redirects handle 301s and bulk CSV import. They only fire when the old URL no longer exists.",["Bulk import via CSV","Won't fire if the page still exists","Use for removed products and migrations"],"Import a CSV of redirects on a dev store and test them.","redir shseo"],
+"s07:duplicate urls":["Common Shopify duplicates: collection-path product URLs, variant parameters, tag-filtered collections, sort parameters and vendor/type pages.",["Link to canonical URLs in the theme","Limit indexable tag pages","Canonicals handle most cases"],"Crawl a Shopify store and categorize duplicate URL patterns.","canon shseo sf"],
+"variant urls":["Variant URLs add ?variant=ID to product URLs and canonicalize to the product. Separate indexable variant pages need a deliberate approach.",["Default: one product URL for all variants","Use product variant structured data","Split into separate products only for real demand"],"Check canonical and schema output on a variant URL.","variants canon"],
+"s07:pagination":["Shopify collections paginate with ?page=N. Each page should self-canonicalize and link to the next.",["Keep paginate size reasonable","Infinite scroll needs crawlable page links","Don't automatically noindex page 2+"],"Check a theme's pagination canonical and link output.","pagin"],
+"collection filters":["Search & Discovery filters add parameters like filter.v.option.color. These URLs usually canonicalize to the collection and shouldn't be indexed.",["Filters create near-infinite combinations","Canonical to the base collection","Turn high-demand filters into real collections"],"Find the most-searched filter combination and make it a dedicated collection.","facet shseo"],
+"s07:faceted navigation":["On Shopify, faceted navigation comes from filters and tag-based collections. Controlling which versions get indexed is key.",["Tag pages (/collections/x/tag) can be thin","Use robots.txt.liquid or noindex for waste","Promote valuable facets to collections"],"Audit tag and filter URLs in Search Console's indexed pages.","facet shseo"],
+"product titles":["Product titles are the H1 and default title tag on Shopify. They should include the product type and key attributes shoppers search for.",["Brand + product + key attribute","Readable, not stuffed","Set a separate SEO title when needed"],"Rewrite 10 product titles using one consistent pattern.","title shseo"],
+"product descriptions":["Product descriptions explain features, benefits and specs. Unique descriptions help ranking and conversion; manufacturer copy is duplicated across retailers.",["Answer buyer questions","Structure with headings and lists","Include materials, sizes and use cases"],"Rewrite one manufacturer description into unique, structured copy.","ecom helpful"],
+"product images":["Product images drive conversion and image search. Size, format, alt text and filenames all matter.",["Descriptive filenames before upload","Specific alt text","Responsive sizes via image_url"],"Optimize one product's images: filenames, alt text, sizes.","img shperf"],
+"alt text":["Alt text describes images for accessibility and search. On Shopify you set it per media item.",["Describe what's shown, including the variant","No keyword stuffing","Decorative theme images need empty alt"],"Fill in missing alt text across one collection's products.","img"],
+"product schema":["Product schema (JSON-LD) describes name, price, availability, reviews and more. It enables product rich results and merchant listings.",["Offers with price and availability","AggregateRating only with real reviews","Validate in the Rich Results Test"],"Audit a theme's product JSON-LD and fix missing fields.","sdprod rrt"],
+"s07:reviews":["Product reviews add unique content, trust and rating stars. Review apps must output content and schema that Google can see.",["Reviews should render in crawlable HTML","Only mark up genuine reviews","Encourage detailed reviews"],"Check whether a review app's content and schema appear in the rendered HTML.","revsd js"],
+"faqs":["Product FAQs answer objections and long-tail questions directly on the page.",["Use real customer questions","Keep answers concise","FAQ rich results are now shown for very few sites"],"Add 5 real FAQs to a product page from support questions.","faqsd helpful"],
+"related products":["Related products add internal links between products, helping discovery and average order value.",["Crawlable links, not JS-only","Relevant, not random","Use the product recommendations API sensibly"],"Check whether a theme's related products render as crawlable links.","links js"],
+"collection titles":["Collection titles are the H1 and default title tag. They should use the category term people actually search.",["Searched terms, not internal jargon","Separate SEO title if needed","Unique per collection"],"Rename 5 collections to match your keyword research.","title shseo"],
+"collection descriptions":["Collection descriptions add context to category pages. A short intro above the grid and fuller copy below usually works best.",["Helpful, not stuffed","Link to subcollections and guides","Answer buyer questions"],"Write a two-part description for one collection.","ecom helpful"],
+"category architecture":["Category architecture is how collections are organized into a hierarchy. Shopify is flat, so hierarchy comes from navigation, linking and breadcrumbs.",["Mirror how customers shop","Parent collections link to children","Avoid overlapping collections"],"Design a 3-level collection hierarchy for a store.","ecom"],
+"internal links":["Internal links connect pages on your site, guiding crawlers and passing authority to priority pages.",["Menus, breadcrumbs, related items, in-content links","Descriptive anchors","Point to canonical URLs"],"Map internal links to your top 5 collections and add more from strong pages.","links"],
+"commercial intent":["Commercial intent means the searcher is ready to compare or buy. Collection pages should satisfy it with range, filters, trust and clear pricing.",["Products visible above the fold","Trust signals","Support with buying guides"],"Compare one collection with the top-ranking competitor for commercial completeness.","ecom"],
+"liquid":["Liquid is Shopify's template language. For SEO it controls titles, meta tags, canonicals, headings, schema and internal links.",["Head output lives in theme.liquid","Use conditionals per template","Avoid heavy loops that slow rendering"],"Write a Liquid snippet that outputs custom meta robots for specific templates.","liquid"],
+"html":["HTML is the semantic structure search engines read: headings, links, lists, images and landmarks.",["Semantic tags over generic divs","Real <a href> links","Valid, accessible markup"],"Inspect a theme's product template HTML for semantic issues.","start devtools"],
+"s07:css":["Theme CSS affects render speed and layout stability. Large bundled stylesheets and app CSS are common issues.",["Load section CSS only where used","Remove unused app CSS","Avoid layout-shifting styles"],"Measure CSS size across templates and split what's template-specific.","rb shperf"],
+"s07:javascript":["Theme and app JavaScript is the main performance cost on Shopify stores, especially for INP.",["Defer non-critical scripts","Remove leftover app code","Prefer native theme features over apps"],"List all third-party scripts on a store and estimate their cost.","shperf inp"],
+"theme performance":["Theme performance is how fast a Shopify theme loads and responds. Shopify's performance guidance gives clear targets.",["Minimal JS, responsive images","Fewer, lighter sections","Profile Liquid with Theme Inspector"],"Run Lighthouse on 3 templates and fix the top issue in each.","shperf lh"],
+"s07:structured data":["Most Shopify themes output some JSON-LD, often incomplete, and apps may add duplicates. Consolidate into one correct set per page.",["Remove duplicate Product markup","Add Organization, BreadcrumbList, Article","Fill dynamic fields with Liquid"],"Audit a store's JSON-LD for duplicates and missing properties.","sd sdprod rrt"],
+
+"product keyword research":["Product keyword research finds how shoppers search for specific products: types, attributes, models, materials and use cases.",["Attribute + product modifiers","Mine marketplace search suggestions","Map to products or collections"],"Find 20 product-level keywords for one category.","ahkw ecom"],
+"category seo":["Category SEO optimizes collection pages for commercial head terms. They often have the highest revenue potential of any SEO page.",["Strong internal linking","Helpful copy and useful filters","Clean, indexable URLs"],"Fully optimize one category page and track its rankings.","ecom"],
+"merchant intent":["Merchant intent is the shopping focus of a query: price comparison, specific models, deals, availability. Google responds with shopping features.",["Price and availability in schema","Merchant Center free listings","Match what the SERP shows"],"Check which of your queries trigger shopping features.","ecom sdprod"],
+"product reviews":["Product reviews provide unique user content, trust and review stars.",["Request reviews after delivery","Display them in crawlable HTML","Mark up only genuine aggregate ratings"],"Set up a review request flow and check review markup.","revsd ecom"],
+"ratings":["Ratings are aggregate star scores. With valid markup they can show in search results and lift CTR.",["Must reflect real reviews shown on the page","No self-serving reviews of your own business","Validate the markup"],"Validate AggregateRating markup on a product page.","revsd rrt"],
+"buying guides":["Buying guides help shoppers choose between options and target commercial investigation queries.",["Compare options honestly","Link to relevant collections and products","Show expertise and testing"],"Outline a buying guide for one category with product links.","helpful ecom"],
+"product variants":["Product variants are options like size and color. The SEO decision is one URL for all variants, or separate pages when variants have their own search demand.",["Default to one product URL","Use variant structured data","Separate products only for distinct demand"],"Decide for 3 products whether variants deserve separate pages.","variants ecom"],
+"out-of-stock products":["Out-of-stock handling protects rankings and user experience. Temporarily unavailable products should stay live; discontinued ones should redirect or return 404/410.",["Temporary: keep the page, show availability, offer alternatives","Permanent: redirect to closest match or 404/410","Update schema availability"],"Write an out-of-stock policy for a store and apply it to one product.","ecom redir"],
+"commercial content":["Commercial content supports purchase decisions: comparisons, guides, size charts, use cases.",["Answers objections","Links to products","Targets 'best' and 'vs' queries"],"Create one comparison page for two popular products.","helpful"],
+"conversion optimization":["Conversion rate optimization turns organic traffic into revenue by improving pages, trust and checkout flow. SEO and CRO should be planned together.",["Measure organic conversion rate separately","Test on high-traffic pages","Don't sacrifice indexable content for design"],"Find the organic landing page with high traffic and low conversion, then propose 3 tests.","ga4"],
+"ecommerce site architecture":["Ecommerce site architecture structures categories, subcategories, products and filters for both shoppers and crawlers.",["Shallow, logical hierarchy","Indexable categories for real demand","Controlled facets"],"Diagram a store's full architecture, including filters and tags.","ecom facet"],
+
+"backlink fundamentals":["Backlinks are links from other websites to yours. They remain a major authority signal and help discovery.",["Quality and relevance beat quantity","Links from real, visited sites matter most","Paid links violate guidelines"],"Analyze a store's backlink profile and classify its top 20 links.","ahlb spam"],
+"referring domains":["Referring domains are the unique websites linking to you. They matter more than total link count.",["Diversity of sources","Steady growth over time","Relevance to your niche"],"Compare referring domains with 3 competitors.","ahlb"],
+"link relevance":["Link relevance is how related the linking page is to yours. Relevant links carry more weight and more useful referral traffic.",["Topic match of site and page","Context around the link","Relevant audiences convert"],"Score 10 prospect sites for relevance before outreach.","ahlb"],
+"s09:anchor text":["For backlinks, anchor text should look natural: mostly brand and URL anchors, some descriptive. Over-optimized exact-match anchors are a spam signal.",["Brand anchors dominate natural profiles","Avoid exact-match patterns","You can't fully control it"],"Review a site's anchor text distribution for over-optimization.","ahlb spam"],
+"dofollow":["'Dofollow' is simply a normal link without rel qualifiers. It passes ranking signals and is the default for editorial links.",["No actual 'dofollow' attribute exists","Most valuable for authority","Must never be paid for"],"Check a sample of your backlinks for rel attributes.","rel"],
+"nofollow":["rel='nofollow', 'sponsored' and 'ugc' qualify links. Google treats them as hints; they still bring traffic and brand exposure.",["sponsored for paid links","ugc for user-generated content","Natural profiles include nofollow links"],"Tag paid and affiliate links on a site with the correct rel values.","rel"],
+"digital pr":["Digital PR earns links and mentions from news sites and publications through newsworthy stories, data and expert commentary.",["Original data and angles","Expert quotes on trending topics","Earns high-authority links"],"Brainstorm 3 data-led story ideas for a store.","ahlb"],
+"guest posting":["Guest posting is writing for other sites for exposure and a link. It's useful when relevant and editorial, risky when done at scale for links.",["Relevant, real publications only","Focus on the audience, not the link","Large-scale guest posting can be link spam"],"Find 5 relevant sites that publish guest expertise and pitch one.","ahlb spam"],
+"resource link building":["Resource link building gets your page listed on curated resource pages that link to useful tools and guides.",["Needs a genuinely useful asset","Search for 'resources' plus your topic","Personalized outreach"],"Find 10 resource pages in your niche and assess fit.","ahlb"],
+"broken link building":["Broken link building finds dead links on other sites and suggests your relevant page as the replacement.",["Find competitor pages that now 404","Create or match a better replacement","Helpful, specific outreach"],"Find one dead competitor page with backlinks and plan a replacement.","ahlb"],
+"linkable assets":["Linkable assets are pages designed to earn links: data studies, tools, calculators, guides and visuals.",["Useful to journalists and bloggers","Hard to replicate","Needs active promotion"],"Design one linkable asset idea, such as a size or care calculator.","ahlb"],
+"brand mentions":["Brand mentions are references to your brand, linked or not. They build recognition, and unlinked ones can become links.",["Monitor mentions","Ask for links on unlinked mentions","Mentions also feed AI search visibility"],"Set up brand alerts and find 5 unlinked mentions.","ahlb"],
+"outreach":["Outreach is contacting site owners, journalists and creators to earn links or coverage.",["Personalized, value-first emails","Short and specific","Follow up once, then move on"],"Write a personalized outreach template and send it to 10 prospects.","ahlb"],
+"partnerships":["Partnerships with suppliers, brands, creators and associations earn natural links and mentions.",["Supplier 'where to buy' pages","Co-created content","Industry associations"],"List 10 partners who could reasonably link to a store.","ahlb"],
+"authority building":["Authority building is the long-term accumulation of links, mentions, reviews and reputation that makes a site trusted.",["Consistent, not bursty","Combine PR, content and partnerships","Reputation beyond links"],"Create a 6-month authority plan for a client.","ahlb helpful"],
+
+"google business profile":["Google Business Profile is your listing on Google Maps and local results. It's the most important local SEO asset.",["Correct primary category and details","Photos, posts, products and reviews","Consistent with the website"],"Fully optimize a Business Profile and note every field.","gbp localrank"],
+"local keywords":["Local keywords combine a service or product with a location or 'near me'.",["City and neighborhood modifiers","Many local searches have no modifier at all","Map them to location pages"],"Find 20 local keyword variations for one business.","ahlocal"],
+"map pack":["The map pack is the set of local results with a map shown for local-intent searches. Google ranks it by relevance, distance and prominence.",["Business Profile is the main lever","Reviews influence prominence","Distance you can't control"],"Check the map pack for 5 local queries and note who ranks.","localrank"],
+"local citations":["Local citations are mentions of your business name, address and phone on directories and other sites.",["Consistency matters most","Key directories for your country and niche","Clean up duplicates"],"Audit a business's citations on the top 10 directories.","ahlocal"],
+"nap":["NAP stands for Name, Address, Phone. It must be identical across the website, Business Profile and citations.",["Exact format consistency","In the footer and contact page","Update everywhere after any change"],"Compare NAP on the website, Business Profile and 5 directories.","ahlocal"],
+"s10:reviews":["Google reviews are a key local ranking and conversion factor. Quantity, recency and responses all matter.",["Ask every happy customer","Respond to every review","Never incentivize or fake reviews"],"Set up a review request process and reply templates.","localrank"],
+"local landing pages":["Local landing pages target each location or service area with unique, useful content.",["Unique content per location","Local proof: address, photos, reviews","Avoid doorway pages"],"Outline a local landing page with genuinely local details.","spam ahlocal"],
+"local schema":["LocalBusiness schema describes a business's name, address, hours and coordinates.",["Match visible information","Use the most specific business type","One per location page"],"Add LocalBusiness JSON-LD to a contact page and validate it.","sdlocal rrt"],
+"local links":["Local links come from local news, events, associations, sponsorships and nearby businesses.",["Sponsor local events","Local press features","Chambers of commerce"],"List 10 local link opportunities for one business.","ahlocal"],
+"service areas":["Service-area businesses serve customers at their location and can hide their address on Business Profile while listing the areas served.",["Set realistic areas","Build pages for key areas","Never create fake addresses"],"Configure service areas on a Business Profile correctly.","gbp"],
+"reputation management":["Reputation management monitors and responds to reviews and mentions to protect trust.",["Respond professionally to negatives","Fix root causes","Monitor all platforms"],"Draft responses to 3 negative review scenarios.","gbp"],
+
+"country targeting":["Country targeting serves content tailored to users in specific countries: pricing, shipping, currency and spelling.",["Pick markets by demand and logistics","hreflang with country codes","Localize more than language"],"Choose 3 target markets for a store and justify each.","multireg markets"],
+"language targeting":["Language targeting serves content in the user's language. Google detects language from visible content, not headers.",["One language per URL","Human-quality translation","hreflang language codes"],"Plan language versions for a store selling across Europe.","multireg hreflang"],
+"hreflang":["hreflang annotations tell Google which language/region version of a page to show. They're essential for multi-market stores.",["Every version references every version","x-default for fallback","Reference canonical URLs only"],"Validate hreflang on a multi-market Shopify store.","hreflang"],
+"url structures":["International URL structures are ccTLDs (example.de), subdomains (de.example.com) or subdirectories (example.com/de/).",["Subdirectories are easiest to manage","ccTLDs send the strongest country signal","Shopify Markets supports subfolders and domains"],"Compare the three options for a client and recommend one.","multireg markets"],
+"cctld":["A country-code top-level domain (.de, .co.uk) strongly signals the target country.",["Strong local trust","Authority split across domains","Higher cost and management"],"List pros and cons of ccTLDs for a specific client.","multireg"],
+"subdomains":["Subdomains (de.example.com) separate markets on the same root domain.",["Flexible hosting","Can behave more like separate sites","Moderate management effort"],"Evaluate whether subdomains fit a given business.","multireg"],
+"subdirectories":["Subdirectories (example.com/de/) keep all markets under one domain, sharing authority.",["Simplest and cheapest","Shared authority","Supported natively by Shopify Markets"],"Set up a subfolder market on a Shopify dev store.","multireg markets"],
+"localization":["Localization adapts content to a market: language, currency, units, spelling, imagery, legal and cultural details.",["More than translation","Local keywords differ","Local trust signals"],"Localize one product page for a second market.","markets multireg"],
+"currency":["Currency display should match the market, and schema price currency must match the page.",["Local currency per market","Correct priceCurrency in schema","Avoid forced IP redirects that hide versions"],"Check that product schema currency matches each market version.","sdprod markets"],
+"s11:local keywords":["The same product can be searched differently in each country, like 'trainers' vs 'sneakers' or 'sofa' vs 'couch'.",["Research each market separately","Don't just translate keywords","Check local SERPs"],"Research keywords for one product in two English-speaking markets.","ahkw multireg"],
+"duplicate international content":["Similar content across same-language markets (US, UK, AU) can look duplicate. hreflang tells Google they're intentional alternates.",["hreflang resolves most issues","Localize prices, spelling and shipping","Canonicals stay self-referencing"],"Check a UK and US page pair for correct hreflang and localization.","hreflang multireg"],
+"geo-targeting":["Geo-targeting uses URL structure, hreflang, local content and local links to associate pages with countries.",["Search Console no longer has a country setting","Local signals matter","Avoid forced IP redirects"],"List every geo signal a site currently sends for each market.","multireg"],
+"international site architecture":["International site architecture plans how markets, languages and URLs fit together.",["Decide structure before launch","Consistent templates across markets","Plan hreflang and sitemaps together"],"Draw the architecture for a 3-market Shopify store.","multireg markets hreflang"],
+
+"answer optimization":["Answer optimization structures content so search engines and AI systems can pull a clear, correct answer.",["Question as heading, direct answer beneath","Concise first sentence, detail after","Accurate and sourced"],"Rewrite 3 sections of a guide into question-and-answer format.","fs aif"],
+"featured snippets":["Featured snippets show an extracted answer above organic results. Pages already on page one can win them.",["Paragraph, list or table formats","Roughly 40–60 word direct answers","Match the format currently shown"],"Target one existing featured snippet with a better formatted answer.","fs"],
+"question queries":["Question queries start with who, what, how, why or can. They feed People also ask, snippets and AI answers.",["Mine PAA and forums","Group into FAQ sections or articles","Answer directly"],"Collect 25 questions for one product category.","fs ahkw"],
+"direct answers":["Direct answers resolve a query immediately in the results. Structure content so the key answer is clear and quotable.",["Lead with the answer","Support with detail","Expect fewer clicks for simple facts"],"Rewrite 5 intros to answer the query in the first sentence.","fs"],
+"faq content":["FAQ content answers common questions on the page. It helps users, long-tail rankings and AI answers even though FAQ rich results are limited.",["Real questions only","Short, clear answers","Place near relevant content"],"Add a FAQ section to a collection from customer questions.","faqsd helpful"],
+"conversational search":["Conversational search uses natural-language, multi-turn queries, common in AI assistants and voice.",["Cover likely follow-up questions","Natural-language headings","Clear entity information"],"Map a typical multi-question buyer journey for one product.","aif"],
+"voice search":["Voice search uses spoken queries, which are longer and question-based, often answered from snippets or local results.",["Question-style content","Strong local SEO for 'near me'","Concise answers"],"Write concise answers to 10 spoken-style questions.","fs localrank"],
+"generative engine optimization":["Generative Engine Optimization (GEO) aims to get your brand and content included and cited in AI-generated answers from ChatGPT, Gemini, Perplexity and AI Overviews.",["Strong classic SEO is the foundation","Brand mentions and citations across the web","Clear, factual, well-structured content"],"Ask 3 AI assistants about your niche and record which brands and sources they cite.","aif"],
+"ai search visibility":["AI search visibility is how often your brand appears or is cited in AI answers. Measuring it is still early and largely manual or tool-based.",["Track a fixed prompt set over time","Record mentions and citations separately","Watch AI referral traffic in GA4"],"Build a list of 20 prompts and track your brand's presence monthly.","aif ga4"],
+"entity optimization":["Entity optimization makes your brand, products and people clearly defined and consistent across your site and the web.",["Organization schema with sameAs","Consistent descriptions everywhere","Presence on authoritative profiles"],"Add Organization schema with sameAs links and audit your brand descriptions.","sd sorg"],
+"s12:brand mentions":["In AI search, mentions in reviews, forums, publications and lists influence whether models recommend your brand.",["Be present where your category is discussed","Third-party reviews and comparisons","Consistent positioning"],"Find the top 10 sources AI assistants cite for your category.","aif"],
+"citations":["AI citations are the source links AI answers show. Being cited brings traffic and credibility.",["Factual, specific, well-structured pages","Original data gets cited","Allow the AI crawlers you want citing you"],"Check which of your pages are cited in AI Overviews for your keywords.","aif"],
+"knowledge sources":["Knowledge sources are where AI models and search engines learn about entities: your site, reference sites, reviews, publications and databases.",["Keep your About and product info clear","Earn coverage on trusted sources","Correct outdated information"],"List where information about your brand lives online and fix inconsistencies.","aif sd"],
+"contextual authority":["Contextual authority is being associated with a topic across many relevant sources, so AI systems connect your brand to that context.",["Consistent topical focus","Mentions alongside category terms","Genuine expert content"],"Search your brand with category terms and assess the associations.","aif helpful"],
+"google ai overviews":["Google AI Overviews show AI-generated summaries with links above many results. Pages that already rank well are the usual sources.",["No special markup required","Normal Search eligibility applies","Clicks are reported in Search Console under Web"],"Record which of your keywords trigger AI Overviews and which sources appear.","aif"],
+"chatgpt":["ChatGPT answers questions and, with search enabled, cites web sources. Allowing OpenAI's search crawler affects whether you can be cited.",["Allow OAI-SearchBot if you want citations","Brand presence across the web matters","Track referrals in GA4"],"Ask ChatGPT with search for recommendations in your niche and note the sources.","aif"],
+"gemini":["Gemini is Google's AI assistant, closely tied to Google's index and entity understanding.",["Google SEO fundamentals carry over","Entity clarity helps","Consistent brand data"],"Test your category prompts in Gemini and compare with Google results.","aif"],
+"perplexity":["Perplexity is an AI answer engine that cites sources prominently, making citations easy to see and track.",["Citation-friendly, factual content","Fresh information","Allow PerplexityBot if desired"],"Run 10 niche queries in Perplexity and log the cited domains.","aif"],
+"microsoft copilot":["Microsoft Copilot draws on Bing's index, so Bing Webmaster Tools and IndexNow support visibility.",["Verify your site in Bing Webmaster Tools","Submit sitemaps to Bing","Same quality fundamentals"],"Set up Bing Webmaster Tools and submit your sitemap.","bwt aif"],
+
+"google search console":["Google Search Console shows how Google sees your site: indexing, performance, queries, Core Web Vitals and issues.",["Verify a domain property","Performance report for queries and pages","Page indexing and URL Inspection for technical checks"],"Set up a domain property and work through every report once.","gsc gschelp"],
+"google analytics 4":["Google Analytics 4 measures what users do on your site, including organic sessions, engagement and revenue.",["Filter to the Organic Search channel","Ecommerce events for revenue","Link it with Search Console"],"Build a GA4 exploration of organic landing pages by revenue.","ga4"],
+"organic traffic":["Organic traffic is visits from unpaid search results. It's the headline SEO metric but should always be tied to revenue.",["Segment by landing page type","Separate branded and non-branded","Account for seasonality"],"Chart organic sessions by page type over the last 12 months.","ga4 gscperf"],
+"clicks":["Clicks in Search Console are clicks from Google results to your site.",["More reliable than third-party estimates","Filter by query, page, country and device","Some queries are anonymized"],"Find your top 20 pages by clicks and their trend.","gscperf"],
+"impressions":["Impressions count how often your pages appeared in search results. Rising impressions without clicks signals opportunity.",["A visibility indicator","Usually grows before clicks","AI Overviews and SERP features affect it"],"Find queries with high impressions and low CTR.","gscperf"],
+"ctr":["Click-through rate is clicks divided by impressions. It depends on position, SERP features and your title and snippet.",["Compare CTR at similar positions","Improve titles and descriptions","Branded queries skew CTR high"],"Rewrite titles on 5 pages with below-average CTR and measure the change.","gscperf title"],
+"average position":["Average position is the mean ranking across impressions. Because it's an average, read it per query and page.",["Aggregates can mislead","Filter to specific queries","Track trends, not single days"],"Track average position for 10 priority queries weekly.","gscperf"],
+"conversions":["Conversions are completed goals such as purchases or sign-ups. SEO success should be measured in organic conversions.",["Set up ecommerce events","Organic conversion rate by landing page","Assisted conversions count too"],"Report organic purchases by landing page for last month.","ga4"],
+"revenue":["Organic revenue connects SEO to business results and justifies investment.",["GA4 ecommerce or Shopify reports","Cross-check with Shopify data","Attribute carefully"],"Compare organic revenue in GA4 with Shopify's sales by channel.","ga4"],
+"landing pages":["Landing pages are the first pages visitors see from search. Analyzing them shows which pages drive traffic and revenue.",["Group by template","Match traffic to conversion rate","Find high-traffic, low-converting pages"],"Build a landing page report combining Search Console clicks and GA4 revenue.","ga4 gscperf"],
+"query performance":["Query performance analysis shows which searches bring impressions and clicks and how that changes.",["Group queries by topic","Branded vs non-branded","Spot new and lost queries"],"Categorize your top 100 queries by intent and topic.","gscperf"],
+"user behavior":["User behavior metrics show how visitors engage: engagement time, scroll depth, paths and exits.",["GA4 engagement metrics","Heatmaps and recordings for UX","Behavior informs CRO more than rankings"],"Review engagement on the top organic landing pages and flag weak ones.","ga4"],
+"attribution":["Attribution assigns credit for conversions across channels. SEO often assists conversions that close through other channels.",["Know which model you're using","Look at assisted paths","GA4 and Shopify numbers will differ"],"Compare how organic is credited under different GA4 attribution settings.","ga4"],
+"seo kpis":["SEO KPIs are the metrics you commit to: non-branded clicks, organic revenue, rankings for priority terms, indexed pages.",["Tie KPIs to business goals","Mix leading and lagging indicators","Agree them with the client upfront"],"Define 5 KPIs for a client with a baseline and target.","gscperf ga4"],
+
+"pagespeed insights":["PageSpeed Insights shows real-user Core Web Vitals (field data) and a Lighthouse lab test for any URL.",["Field data first, lab score second","Test mobile","Check origin-level data too"],"Test 3 templates and record field vs lab results.","psi vitals"],
+"keyword planner":["Google Keyword Planner gives keyword ideas and volume ranges from Google Ads data.",["Free with an Ads account","Volumes shown as ranges without spend","Good for ideas and CPC"],"Generate ideas from 5 seed keywords and export them.","kp"],
+"rich results test":["The Rich Results Test checks whether a page's structured data is eligible for Google rich results.",["Tests a live URL or code","Shows errors and warnings","Covers only Google-supported types"],"Test product, breadcrumb and organization markup on a store.","rrt"],
+"schema validator":["The Schema Markup Validator checks all schema.org markup, not only Google-supported types.",["Validates syntax and types","Complements the Rich Results Test","Useful for debugging"],"Validate one page's full JSON-LD in both tools and compare.","sv sorg"],
+"ahrefs":["Ahrefs is an SEO suite for backlinks, keyword research, competitor analysis, site audits and rank tracking.",["Best known for backlink data","Keywords Explorer and Content Gap","Free Webmaster Tools for sites you own"],"Set up Ahrefs Webmaster Tools on your own site.","aha ahb"],
+"semrush":["Semrush is an SEO and marketing suite for keyword research, competitor analysis, audits and tracking.",["Strong keyword and competitor data","Position tracking","Free academy courses"],"Complete one Semrush Academy course.","sema"],
+"screaming frog":["Screaming Frog SEO Spider crawls sites like a search engine and surfaces technical issues.",["Free up to 500 URLs","Custom extraction and JavaScript rendering","Essential for audits"],"Crawl a store and export issues for titles, canonicals and status codes.","sf"],
+"sitebulb":["Sitebulb is an auditing crawler that prioritizes issues and visualizes site architecture.",["Prioritized hints","Crawl maps","Client-friendly reports"],"Run a Sitebulb audit and compare findings with Screaming Frog.","sb"],
+"chrome devtools":["Chrome DevTools lets you inspect HTML, network requests, performance and rendering in the browser.",["Elements, Network and Performance panels","Throttle to mobile conditions","Coverage for unused code"],"Complete a full performance investigation of one page in DevTools.","devtools"],
+"lighthouse":["Lighthouse is a lab audit for performance, accessibility, best practices and SEO.",["Lab data varies between runs","Use it for debugging, not as a ranking target","Run in incognito"],"Run Lighthouse 3 times on one page and compare the variance.","lh"],
+"html inspection":["HTML inspection checks raw and rendered HTML for SEO elements: title, meta robots, canonical, headings, schema and links.",["View Source shows raw HTML","Elements panel shows the rendered DOM","Compare the two"],"Compare raw vs rendered HTML for a page's canonical and schema.","devtools js"],
+"network panel":["The Network panel shows every request a page makes, with size, timing and priority.",["Find heavy files and third parties","Check status codes and redirects","Inspect caching"],"List the 10 largest requests on a product page.","devnet"],
+"performance panel":["The Performance panel records loading and interactions to find long tasks, layout shifts and render delays.",["Long main-thread tasks hurt INP","Layout shift markers","LCP marker"],"Record an interaction on a variant selector and find the slowest task.","devperf"],
+"content research tools":["Content research tools find topics, questions and coverage gaps: keyword tools, PAA explorers and content graders.",["Use SERP data, not guesses","Pair with customer insight","Don't write to a score alone"],"Research one topic with two tools and compare their suggestions.","ahb"],
+"ai assistants":["AI assistants speed up research, outlines, code, schema and analysis. Their output needs expert review.",["Great for drafts and data wrangling","Verify facts and code","Keep human judgment in charge"],"Generate JSON-LD with an AI assistant, then validate and fix it.","genai sv"],
+"serp analysis tools":["SERP analysis tools capture and compare search results, features and ranking pages across locations and devices.",["Check different countries","Track SERP feature changes","Compare competitor page metrics"],"Compare the same query's SERP across 3 countries.","ahkw"],
+
+"client discovery":["Client discovery gathers business goals, margins, products, audience, history and constraints before any SEO work begins.",["Understand what drives revenue","Get access to Search Console, GA4 and Shopify","Ask about past migrations and issues"],"Write a discovery questionnaire for Shopify SEO clients.","lseo"],
+"seo audit":["An SEO audit systematically reviews technical, on-page, content, links and analytics to find issues and opportunities.",["Findings tied to business impact","Evidence for every issue","Ends in a prioritized plan"],"Run a full audit on a real or demo store using the 17-step process.","sf gsc ahtech"],
+"seo strategy":["SEO strategy connects business goals to SEO actions, with priorities and resources.",["Goals, KPIs and focus areas","What not to do","Time horizons"],"Write a one-page SEO strategy for a store.","lseo"],
+"roadmap":["An SEO roadmap schedules actions over months with owners and dependencies.",["Quarterly phases","Quick wins first","Development dependencies noted"],"Build a 6-month roadmap from an audit.","lseo"],
+"prioritization":["Prioritization ranks tasks by impact, effort and confidence so the most valuable work ships first.",["Impact/effort or ICE scoring","Consider development capacity","Revisit monthly"],"Score 20 audit findings by impact and effort.","lseo"],
+"implementation":["Implementation is shipping the fixes. As a Shopify developer this is your edge: you can deliver what many SEO consultants only recommend.",["Theme, Liquid and schema changes","QA before and after","Log every change"],"Implement 5 audit fixes on a store and document them.","shseo liquid"],
+"reporting":["Reporting communicates progress, results and next steps to clients.",["Lead with business outcomes","Explain what changed and why","Clear next actions"],"Create a monthly SEO report template.","gscperf ga4"],
+"client communication":["Client communication sets expectations, explains SEO timelines and maintains trust.",["Plain language","Regular updates","Honest about uncertainty"],"Write an email explaining why SEO results take 3–6 months.","lseo"],
+"roi":["SEO ROI compares revenue gained from organic search with the cost of the work.",["Use organic revenue and margin","Account for the time lag","Model scenarios, don't promise"],"Build a simple ROI model for a client.","ga4"],
+"revenue attribution":["Revenue attribution connects organic sessions to sales, proving SEO's business value.",["GA4 ecommerce tracking","Shopify channel reports","Assisted conversions"],"Reconcile one month of organic revenue across GA4 and Shopify.","ga4"],
+"retainers":["Retainers are ongoing monthly engagements, the backbone of a consulting business.",["Clear monthly deliverables","Minimum terms","Show value every month"],"Design 3 retainer packages for Shopify stores.","lseo"],
+"seo growth strategy":["SEO growth strategy looks beyond fixes to new traffic sources: new categories, content hubs, markets and AI visibility.",["Find the next growth lever","Expand into markets and topics","Combine SEO with CRO"],"Identify the top 3 growth levers for one client.","lseo"],
+
+"technical audit":["A technical audit checks crawling, indexing, rendering, architecture, performance and structured data.",["Crawl data plus Search Console data","Look for template-level issues","Evidence and severity for each finding"],"Run a technical audit on a demo store.","ahtech sf gsc"],
+"on-page seo":["On-page SEO optimizes each page's content and HTML: titles, headings, copy, images, links and intent match.",["Page-level relevance","Titles and headings first","Intent alignment"],"Audit 10 key pages' on-page elements in a spreadsheet.","ahon start"],
+"local / international":["This audit step checks local signals (Business Profile, NAP, local pages) and international setup (markets, hreflang, localization) where they apply.",["Only when the business needs it","Consistency checks","hreflang validation"],"Decide whether a store needs local or international SEO and audit the relevant parts.","hreflang gbp"]
+};
+const A={"canonical":"canonical tags","schema markup":"structured data","search console":"google search console","analytics":"google analytics 4","business profile":"google business profile","business understanding":"client discovery","keyword research":"keyword discovery","competitor analysis":"organic competitors","indexation":"indexing","site architecture":"information architecture","content":"content optimization","schema":"structured data","page speed":"core web vitals","backlinks":"backlink fundamentals","aeo / geo":"generative engine optimization","cro":"conversion optimization","report":"reporting","prioritized action plan":"prioritization"};
+
+/* ---------- Collect topics ---------- */
+const topics=[];
+document.querySelectorAll(".route .chips li, .audit li").forEach(li=>{
+  if(li.closest(".tier"))return;
+  const st=li.closest(".station");
+  const name=li.textContent.trim();
+  const g=li.closest(".grp");
+  topics.push({li,sid:st.id,name,
+    grp:g&&g.querySelector("h3")?g.querySelector("h3").textContent.trim():"",
+    sec:st.querySelector("h2").textContent.trim(),
+    num:st.querySelector(".num").textContent.trim()});
+  li.tabIndex=0;li.setAttribute("role","button");
+});
+topics.forEach((t,i)=>{
+  t.li.addEventListener("click",()=>open(i));
+  t.li.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();open(i)}});
+});
+
+function data(t){
+  const n=t.name.toLowerCase();
+  const d=T[t.sid+":"+n]||T[n]||T[A[n]];
+  if(d)return{what:d[0],keys:d[1],practice:d[2],res:d[3]};
+  return{what:t.name+" is part of "+t.sec.toLowerCase()+". Use the resources and the AI prompt below to study it in depth.",keys:["Definition and purpose","How it affects rankings and revenue","How to audit and improve it"],practice:"Find one real example of "+t.name+" on a Shopify store and document what you'd improve.",res:""};
+}
+
+/* ---------- Storage (per-viewer) ---------- */
+const KEY="seo-roadmap-v1";
+let state={done:[],me:"",mode:"teach",level:"Intermediate"};
+try{const s=localStorage.getItem(KEY);if(s)state=Object.assign(state,JSON.parse(s))}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}}
+const DEFAULT_ME="I'm a Shopify developer with 7+ years of experience in theme development, Liquid, custom apps, CRO and speed optimization, and I'm training to become a professional SEO consultant.";
+const id=t=>t.sid+"|"+t.name;
+function paintDone(){
+  let c=0;topics.forEach(t=>{const d=state.done.includes(id(t));t.li.classList.toggle("done",d);if(d)c++});
+  document.getElementById("prog").style.width=(c/topics.length*100)+"%";
+  document.getElementById("prog-t").textContent=c+" of "+topics.length+" learned";
+}
+paintDone();
+
+/* ---------- Dialog ---------- */
+const $=s=>document.getElementById(s);
+const dlg=$("topic");let cur=0;
+$("t-me").value=state.me||DEFAULT_ME;
+$("t-level").value=state.level;
+function setMode(m){state.mode=m;document.querySelectorAll("#t-modes [data-mode]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.mode===m))}
+setMode(state.mode);
+
+function render(){
+  const t=topics[cur],d=data(t);
+  $("t-crumb").innerHTML="Stage <b>"+t.num+"</b> / "+esc(t.sec)+(t.grp?" / "+esc(t.grp):"");
+  $("t-pos").textContent=(cur+1)+" / "+topics.length;
+  $("t-title").textContent=t.name;
+  $("t-what").textContent=d.what;
+  $("t-keys").innerHTML=d.keys.map(k=>"<li>"+esc(k)+"</li>").join("");
+  $("t-practice").textContent=d.practice;
+  const done=state.done.includes(id(t));
+  $("t-learned").setAttribute("aria-pressed",done);
+  $("t-learned").textContent=done?"✓ Learned":"Mark as learned";
+  const keys=[...new Set((d.res+" "+(SD[t.sid]||"")).split(/\s+/).filter(k=>R[k]))].slice(0,5);
+  const q=encodeURIComponent(t.name+" SEO");
+  let html=keys.map(k=>'<li><a href="'+R[k][1]+'" target="_blank" rel="noopener"><b>'+esc(R[k][0])+"</b><small>"+esc(R[k][2])+"</small></a></li>").join("");
+  html+='<li class="srch"><a href="https://www.google.com/search?q='+encodeURIComponent('site:developers.google.com/search "'+t.name+'"')+'" target="_blank" rel="noopener"><b>Search Google Search Central for this topic</b><small>Official documentation search</small></a></li>';
+  html+='<li class="srch"><a href="https://www.youtube.com/results?search_query='+q+'+tutorial" target="_blank" rel="noopener"><b>Video lessons on YouTube</b><small>Search results for this topic</small></a></li>';
+  $("t-res").innerHTML=html;
+  buildPrompt();
+  $("t-status").textContent="";
+  $("t-scroll").scrollTop=0;
+}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+
+const MODES={
+teach:"Teach me this topic:\n1. Explain it in plain language first, then in technical depth.\n2. Explain why it matters for rankings, traffic and revenue.\n3. Show how it works on Shopify specifically, including platform limits and theme/Liquid implementation.\n4. List the most common mistakes and how to spot them during an audit.\n5. Walk through a worked example on a realistic store.\n6. Finish with 3 questions to check my understanding, and wait for my answers before moving on.",
+quiz:"Quiz me on this topic:\n- Ask 8 questions, one at a time, getting harder as we go.\n- Mix concept questions with real-world Shopify store scenarios.\n- After each answer, tell me whether I'm right, explain why, and fill any gaps.\n- At the end, give me a score and the 3 things I should review.",
+practice:"Design a hands-on practice project for this topic:\n- Starting point: {PRACTICE}\n- Give step-by-step instructions using free tools where possible (Search Console, Chrome DevTools, a Shopify development store).\n- Define the deliverable I should produce and a checklist to judge it.\n- Then act as my reviewer: when I share my results, critique them like a senior SEO consultant would.",
+client:"Help me explain this topic to a client:\n- Write a plain-English explanation a non-technical store owner would understand (under 150 words).\n- Explain the business impact and a realistic timeline for results.\n- Show how I'd present a finding about it in an audit: issue, evidence, impact, fix, priority.\n- Give me 3 questions a client is likely to ask, with strong answers."
+};
+const LEVEL={Beginner:"I'm new to this topic, so define terms before using them.",Intermediate:"I know the basics, so skip the fundamentals and focus on practical application.",Advanced:"I already work with this, so focus on edge cases, trade-offs and expert-level nuance."};
+function buildPrompt(){
+  const t=topics[cur],d=data(t),lvl=$("t-level").value;
+  const p="You are my SEO mentor. "+($("t-me").value.trim()||DEFAULT_ME)+"\n\n"+
+  "I'm working through a 16-stage SEO mastery roadmap. Where I am now:\n"+
+  "- Stage "+t.num+": "+t.sec+(t.grp?" > "+t.grp:"")+"\n"+
+  "- Topic: "+t.name+"\n"+
+  "- My level: "+lvl+". "+LEVEL[lvl]+"\n\n"+
+  "What I understand so far: "+d.what+"\n"+
+  "Key concepts to cover: "+d.keys.join("; ")+".\n\n"+
+  MODES[state.mode].replace("{PRACTICE}",d.practice)+"\n\n"+
+  "Ground rules:\n"+
+  "- Use current best practice as of "+new Date().getFullYear()+", and flag anything that changed recently or where experts disagree.\n"+
+  "- Prefer official sources (Google Search Central, Shopify docs, web.dev) and name them so I can verify.\n"+
+  "- Use Shopify-specific examples (Liquid, theme files, Shopify admin, apps) wherever relevant.\n"+
+  "- Be practical and concise. No filler.";
+  $("t-prompt").value=p;
+  const e=encodeURIComponent(p);
+  $("t-claude").href="https://claude.ai/new?q="+e;
+  $("t-gpt").href="https://chatgpt.com/?q="+e;
+}
+
+function open(i){cur=i;render();if(!dlg.open){dlg.showModal?dlg.showModal():dlg.setAttribute("open","")}}
+function close(){dlg.close?dlg.close():dlg.removeAttribute("open");topics[cur].li.focus()}
+function go(step){cur=(cur+step+topics.length)%topics.length;render()}
+
+$("t-close").onclick=close;
+$("t-prev").onclick=()=>go(-1);
+$("t-next").onclick=()=>go(1);
+dlg.addEventListener("click",e=>{if(e.target===dlg)close()});
+dlg.addEventListener("keydown",e=>{
+  const tag=(e.target.tagName||"").toLowerCase();
+  if(tag==="textarea"||tag==="select")return;
+  if(e.key==="ArrowRight")go(1);
+  if(e.key==="ArrowLeft")go(-1);
+});
+$("t-learned").onclick=()=>{
+  const k=id(topics[cur]);
+  state.done=state.done.includes(k)?state.done.filter(x=>x!==k):state.done.concat(k);
+  save();paintDone();render();
+};
+document.querySelectorAll("#t-modes [data-mode]").forEach(b=>b.onclick=()=>{setMode(b.dataset.mode);save();buildPrompt()});
+$("t-level").onchange=()=>{state.level=$("t-level").value;save();buildPrompt()};
+$("t-me").oninput=()=>{state.me=$("t-me").value;save();buildPrompt()};
+$("t-copy").onclick=async()=>{
+  const ta=$("t-prompt");let ok=false;
+  try{await navigator.clipboard.writeText(ta.value);ok=true}catch(e){
+    ta.focus();ta.select();try{ok=document.execCommand("copy")}catch(_){}
+  }
+  $("t-status").textContent=ok?"Copied. Paste it into any AI assistant.":"Prompt selected. Press Ctrl+C (or ⌘C) to copy.";
+};
+})();
+</script>
+</body>
+</html>
